@@ -1,24 +1,7 @@
-// src/pages/About.js
-/*const About = () => {
-  return (
-    <main className="about-page">
-      <h1>Our Story</h1>
-      <section className="mission">
-        <h2>Mission</h2>
-        <p>To deliver premium cashew products through sustainable farming and community empowerment</p>
-      </section>
-      <section className="farm-details">
-        <h2>Our Farm</h2>
-        <p>50 hectares in Odienné, Ivory Coast - First harvest expected 2031</p>
-      </section>
-    </main>
-  );
-};
-
-export default About; */
 
 import React from 'react';
 import './About.css';
+import farmImage from '../assets/images/cashew-farm.jpg'; 
 import { FaTree, FaMapMarkerAlt, FaUsers, FaChartLine } from 'react-icons/fa';
 
 const About = () => {
@@ -78,12 +61,13 @@ const About = () => {
             </div>
           </div>
           <div className="farm-image">
-            {/* Replace with your farm image */}
-            <div className="image-placeholder" style={{ backgroundColor: '#B2CD9C' }}>
-              Farm Image
-            </div>
+            <img 
+              src={farmImage} 
+              alt="AfriNuts Export cashew farm in Odienné, Ivory Coast" 
+              className="farm-photo"
+            />
           </div>
-        </div>
+          </div>
       </section>
 
       {/* Timeline Section */}

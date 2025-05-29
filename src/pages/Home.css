@@ -5,26 +5,6 @@
   overflow-x: hidden;
 }
 
-/* Language Toggle */
-.language-toggle {
-  position: fixed;
-  top: 20px;
-  right: 20px;
-  background: rgba(255, 255, 255, 0.8);
-  border: 1px solid #4B352A;
-  border-radius: 20px;
-  padding: 5px 15px;
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  cursor: pointer;
-  z-index: 100;
-}
-
-.language-toggle:hover {
-  background: #F0F2BD;
-}
-
 /* Header */
 .home-header {
   display: flex;
@@ -32,25 +12,6 @@
   padding: 80px 20px 20px 20px;
   align-items: center;
   padding: 20px 40px;
-}
-
-.logo-title {
-  display: flex;
-  align-items: center;
-  gap: 15px;
-  padding-left: 20px;
-}
-
-.logo {
-  height: 60px;
-  width: auto;
-}
-
-.site-title {
-  font-size: 1.5rem;
-  font-weight: bold;
-  color: #4B352A;
-  margin: 0;
 }
 
 /* Hero Section */

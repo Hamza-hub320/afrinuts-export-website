@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import './Home.css';
-import logo from '../assets/images/logo.png';
-import heroImage from '../assets/images/hero-image.jpg';
+import logo from '../assets/images/afrinuts-logo.png';
+import heroImage from '../assets/images/hero.jpg';
 import { FaChevronDown, FaGlobe } from 'react-icons/fa';
 
 const Home = () => {
@@ -43,14 +43,15 @@ const Home = () => {
         <span>{language === 'en' ? 'FR' : 'EN'}</span>
       </button>
 
-      {/* Header with Logo */}
-      <header className="home-header">
-        <img src={logo} alt="AfriNuts Export Logo" className="logo" />
-      </header>
-
       {/* Hero Section */}
       <section className="hero-section" style={{ backgroundImage: `url(${heroImage})` }}>
         <div className="hero-overlay">
+          <img 
+            src={logo} 
+            alt="AfriNuts Export Logo" 
+            className="logo" 
+            style={{ height: '80px', marginBottom: '1.5rem' }} 
+          />
           <h1>{translations[language].welcome}</h1>
           <p>{translations[language].tagline}</p>
           <div className="hero-buttons">

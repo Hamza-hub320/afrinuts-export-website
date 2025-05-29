@@ -18,6 +18,7 @@
   width: 100%;
   max-width: 1300px;
   padding: 0 50px;
+  align-items: center;
 }
 
 .navbar-logo {
@@ -61,26 +62,29 @@
   background: rgba(255, 255, 255, 0.8);
   border: 1px solid #4B352A;
   border-radius: 20px;
-  padding: 5px 10px; /* Reduced from 5px 12px */
+  padding: 5px 10px; 
   display: flex;
   align-items: center;
-  justify-content: center; /* Center contents */
-  gap: 5px; /* Reduced from 6px */
+  justify-content: center; 
+  gap: 5px; 
   cursor: pointer;
   color: #4B352A;
   margin-left: 1rem;
   transition: all 0.3s ease;
-  width: 60px; /* Fixed width */
-  height: 32px; /* Fixed height */
+  width: 60px; 
+  height: 32px; 
+  align-self: center; 
+  margin-top: 0; 
+  margin-bottom: 0; 
 }
 
 .navbar-lang-toggle span {
-  font-size: 0.9rem; /* Slightly smaller text */
+  font-size: 0.9rem; 
   font-weight: bold;
 }
 
 .navbar-lang-toggle svg {
-  font-size: 0.9rem; /* Slightly smaller icon */
+  font-size: 0.9rem; 
 }
 
 /* Hover state remains the same */

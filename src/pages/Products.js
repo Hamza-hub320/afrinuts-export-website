@@ -54,8 +54,8 @@ const Products = () => {
         "Available in bulk quantities"
       ],
       icon: <FaLeaf className="product-icon" />,
-      color: "#4B352A", // Dark brown
-      textColor: "#F0F2BD", // Cream
+      color: "#F0F2BD", // Cream
+      textColor: "#4B352A", // Cream
       available: false,
       comingSoon: "Production starts 2031"
     }

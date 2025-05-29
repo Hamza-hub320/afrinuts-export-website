@@ -42,15 +42,7 @@ const Home = () => {
         <FaGlobe />
         <span>{language === 'en' ? 'FR' : 'EN'}</span>
       </button>
-
-      {/* Header with Logo and Title */}
-      <header className="home-header">
-        <div className="logo-title">
-          <img src={logo} alt="AfriNuts Export Logo" className="logo" />
-          <h2 className="site-title">AfriNuts Export</h2>
-        </div>
-      </header>
-
+      
       {/* Hero Section */}
       <section className="hero-section" style={{ backgroundImage: `url(${heroImage})` }}>
         <div className="hero-overlay">

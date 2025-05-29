@@ -1,7 +1,8 @@
 import React from 'react';
 import './Farm.css';
-import farmImage1 from '../../assets/images/farm-1.jpg'; // Add your farm images
-import farmImage2 from '../../assets/images/farm-2.jpg';
+import farmImage1 from '../assets/images/farm-1.jpg'; 
+import farmImage2 from '../assets/images/farm-2.jpg';
+import farmHero from '../assets/images/farm-hero.jpg';
 import { FaTree, FaMapMarkerAlt, FaCalendarAlt, FaLeaf } from 'react-icons/fa';
 
 const Farm = () => {
@@ -15,7 +16,22 @@ const Farm = () => {
   return (
     <div className="farm-page">
       {/* Hero Section */}
-      <section className="farm-hero">
+      <section
+        className="farm-hero"
+        style={{
+          backgroundImage: `linear-gradient(rgba(75, 53, 42, 0.7), rgba(75, 53, 42, 0.7)), url(${farmHero})`,
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+          backgroundRepeat: 'no-repeat',
+          height: '60vh',
+          minHeight: '400px',
+          display: 'flex',
+          alignItems: 'center',
+          justifyContent: 'center',
+          textAlign: 'center',
+          color: '#F0F2BD'
+        }}
+      >
         <div className="hero-content">
           <h1>Our Cashew Farm</h1>
           <p>Sustainably cultivating premium cashews in the heart of Ivory Coast</p>

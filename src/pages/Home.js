@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import './Home.css';
-import logo from '../assets/images/afrinuts-logo.png';
 import heroImage from '../assets/images/hero.jpg';
 import { FaChevronDown, FaGlobe } from 'react-icons/fa';
 

@@ -6,11 +6,7 @@
 
 /* Hero Section */
 .farm-hero {
-  height: 60vh;
-  min-height: 400px;
-  background: linear-gradient(rgba(75, 53, 42, 0.7), rgba(75, 53, 42, 0.7)), 
-              url('../../assets/images/farm-hero.jpg') center/cover no-repeat;
-  display: flex;
+   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;

@@ -1,12 +1,18 @@
 import { Link } from 'react-router-dom';
 import './Navbar.css';
 import { FaGlobe } from 'react-icons/fa';
+import logo from '../../assets/images/afrinuts-export-official-logo.png';
 
 const Navbar = ({ language, toggleLanguage }) => {
   return (
     <nav className="navbar">
       <div className="navbar-container">
         <Link to="/" className="navbar-logo">
+        <img 
+            src={logo} 
+            alt="AfriNuts Export Logo" 
+            className="nav-logo-img"
+          />
           AfriNuts Export
         </Link>
         <ul className="nav-menu">

@@ -43,6 +43,13 @@
   height: 80px;
 }
 
+.nav-logo-img {
+  height: 40px;
+  width: auto;
+  margin-right: 12px;
+  transition: all 0.3s ease;
+}
+
 .nav-links {
   color: #333;
   display: flex;
@@ -104,6 +111,27 @@
 }
 
 @media (max-width: 480px) {
+  .navbar-logo {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .nav-logo-img {
+    height: 30px;
+    margin-right: 8px;
+  }
+  
+  .navbar-logo {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .nav-logo-img {
+    height: 25px;
+  }
+  
   .navbar-logo {
     font-size: 1.2rem;
   }

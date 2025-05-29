@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/afrinuts-export-website/static/css/main.b4017b06.css",
-    "main.js": "/afrinuts-export-website/static/js/main.59ef080c.js",
+    "main.css": "/afrinuts-export-website/static/css/main.7c378991.css",
+    "main.js": "/afrinuts-export-website/static/js/main.55780026.js",
     "static/js/453.04a11e05.chunk.js": "/afrinuts-export-website/static/js/453.04a11e05.chunk.js",
-    "static/media/afrinuts-logo.png": "/afrinuts-export-website/static/media/afrinuts-logo.67fbfbcc949b4702fb53.png",
     "static/media/farm-2.jpg": "/afrinuts-export-website/static/media/farm-2.bbf069571cf66affc70c.jpg",
     "static/media/farm-hero.jpg": "/afrinuts-export-website/static/media/farm-hero.a4eeedd72c4872f882e2.jpg",
     "static/media/hero.jpg": "/afrinuts-export-website/static/media/hero.9c16831eaccb447a4402.jpg",
     "static/media/farm-1.jpg": "/afrinuts-export-website/static/media/farm-1.5d6d695a9cea34c7e0d3.jpg",
+    "static/media/contact-hero.jpg": "/afrinuts-export-website/static/media/contact-hero.c555ab95e163bed45f24.jpg",
     "static/media/afrinuts-export-official-logo.png": "/afrinuts-export-website/static/media/afrinuts-export-official-logo.7f804d81dd9ad06ca291.png",
     "index.html": "/afrinuts-export-website/index.html",
-    "main.b4017b06.css.map": "/afrinuts-export-website/static/css/main.b4017b06.css.map",
-    "main.59ef080c.js.map": "/afrinuts-export-website/static/js/main.59ef080c.js.map",
+    "main.7c378991.css.map": "/afrinuts-export-website/static/css/main.7c378991.css.map",
+    "main.55780026.js.map": "/afrinuts-export-website/static/js/main.55780026.js.map",
     "453.04a11e05.chunk.js.map": "/afrinuts-export-website/static/js/453.04a11e05.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.b4017b06.css",
-    "static/js/main.59ef080c.js"
+    "static/css/main.7c378991.css",
+    "static/js/main.55780026.js"
   ]
 }

@@ -37,11 +37,6 @@ const Home = () => {
 
   return (
     <div className="home-page">
-      {/* Language Toggle */}
-      <button className="language-toggle" onClick={toggleLanguage}>
-        <FaGlobe />
-        <span>{language === 'en' ? 'FR' : 'EN'}</span>
-      </button>
       
       {/* Hero Section */}
       <section className="hero-section" style={{ backgroundImage: `url(${heroImage})` }}>

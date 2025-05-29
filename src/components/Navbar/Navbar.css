@@ -31,6 +31,24 @@
   align-items: center;
 }
 
+.navbar-lang-toggle {
+  background: rgba(255, 255, 255, 0.8);
+  border: 1px solid #4B352A;
+  border-radius: 20px;
+  padding: 5px 12px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  cursor: pointer;
+  color: #4B352A;
+  margin-left: 1rem;
+  transition: background 0.3s ease;
+}
+
+.navbar-lang-toggle:hover {
+  background: #F0F2BD;
+}
+
 .navbar-logo-img {
   height: 40px;
   margin-right: 10px;

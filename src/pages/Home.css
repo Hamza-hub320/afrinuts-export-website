@@ -28,13 +28,28 @@
 /* Header */
 .home-header {
   display: flex;
-  justify-content: center;
-  padding: 20px;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 20px 40px;
+}
+
+.logo-title {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding-left: 20px;
 }
 
 .logo {
-  height: 80px;
+  height: 60px;
   width: auto;
+}
+
+.site-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #4B352A;
+  margin: 0;
 }
 
 /* Hero Section */

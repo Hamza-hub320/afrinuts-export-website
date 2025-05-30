@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react'; 
 import './Contact.css';
 import { FaMapMarkerAlt, FaPhone, FaEnvelope, FaClock, FaPaperclip, FaCheckCircle } from 'react-icons/fa';
 import emailjs from '@emailjs/browser';
@@ -147,7 +147,7 @@ const Contact = () => {
               <input
                 type="text"
                 id="name"
-                name="from_name" // Matches EmailJS template variable
+                name="name"
                 value={formData.name}
                 onChange={handleChange}
                 className={errors.name ? 'error' : ''}
@@ -160,7 +160,7 @@ const Contact = () => {
               <input
                 type="email"
                 id="email"
-                name="from_email" // Matches EmailJS template variable
+                name="email"
                 value={formData.email}
                 onChange={handleChange}
                 className={errors.email ? 'error' : ''}
@@ -223,7 +223,9 @@ const Contact = () => {
                 </div>
               )}
             </div>
-            
+            {/* Hidden fields for EmailJS compatibility */}
+            <input type="hidden" name="from_name" value={formData.name} />
+            <input type="hidden" name="from_email" value={formData.email} />
             <button 
               type="submit" 
               className="submit-button"

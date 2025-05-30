@@ -85,7 +85,7 @@ const Products = () => {
       >
         <div className="hero-content">
           <h1>Our Products</h1>
-          <p>From our farm to your table - premium quality cashew products</p>
+          <p style={{ color: '#B2CD9C' }}>From our farm to your table - premium quality cashew products</p>
         </div>
       </section>
 

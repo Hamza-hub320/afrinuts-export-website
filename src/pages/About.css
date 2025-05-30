@@ -396,3 +396,90 @@
     height: auto;
   }
 }
+
+/* Legacy Timeline */
+.legacy-section {
+  padding: 80px 20px;
+}
+
+.legacy-container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.legacy-timeline {
+  position: relative;
+  padding: 20px 0;
+}
+
+.era {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  margin-bottom: 30px;
+  overflow: hidden;
+}
+
+.era-header {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.era-icon {
+  font-size: 1.5rem;
+}
+
+.era-content {
+  padding: 25px;
+}
+
+.legacy-feats {
+  margin-top: 15px;
+  list-style: none;
+  padding-left: 0;
+}
+
+.legacy-feats li {
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.transition-arrow {
+  text-align: center;
+  margin: 20px 0;
+  position: relative;
+}
+
+.future-vision {
+  background: white;
+  border-radius: 8px;
+  padding: 30px;
+  border-top: 5px solid;
+  text-align: center;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.vision-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .era-header {
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+  }
+  
+  .vision-header {
+    flex-direction: column;
+  }
+}

@@ -276,7 +276,7 @@
 
 }
 
-* Adjust product card content spacing */
+/* Adjust product card content spacing */
 .modern-product-content {
   display: flex;
   flex-direction: column;

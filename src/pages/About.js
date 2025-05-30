@@ -24,12 +24,20 @@ const About = () => {
   return (
     <main className="about-page">
       {/* Hero Section */}
-      <section className="about-hero" style={{ backgroundColor: '#4B352A' }}>
-        <div className="hero-content">
-          <h1 style={{ color: '#F0F2BD' }}>Our Story</h1>
-          <p style={{ color: '#B2CD9C' }}>Transforming the cashew value chain in Ivory Coast</p>
-        </div>
-      </section>
+        <section 
+          className="about-hero" 
+          style={{ 
+            backgroundImage: `linear-gradient(rgba(75, 53, 42, 0.7), rgba(75, 53, 42, 0.7)), url(${require('../assets/images/about-hero.jpg')})`,
+            backgroundSize: 'cover',
+            backgroundPosition: 'center',
+            backgroundRepeat: 'no-repeat'
+          }}
+        >
+          <div className="hero-content">
+            <h1 style={{ color: '#F0F2BD' }}>Our Story</h1>
+            <p style={{ color: '#B2CD9C' }}>Transforming the cashew value chain in Ivory Coast</p>
+          </div>
+        </section>
 
       {/* CEO Message Section */}
       <section className="ceo-section">
@@ -40,10 +48,13 @@ const About = () => {
           <div className="ceo-message">
             <h2 style={{ color: '#4B352A' }}>A Message From Our CEO</h2>
             <p>
-              "At AfriNuts Export, we're not just building a business - we're cultivating a legacy. 
-              As a native of Odienné, I've witnessed firsthand the potential of our land and people. 
-              Our mission goes beyond cashews; we're creating sustainable opportunities that will 
-              benefit generations to come."
+              "At AfriNuts Export, we’re not just building a business — we’re cultivating a legacy rooted in responsibility, heritage, and hope. As a native of Odienné and the son of cashew farmers, I’ve witnessed firsthand both the struggles and the strength of our people. This land has nourished generations before me — and now it’s our duty to harness its potential with vision and integrity.
+
+              Our mission is clear: to transform Côte d’Ivoire’s cashew sector by moving beyond raw exports into value-added processing, traceable sourcing, and community reinvestment. Through our integrated model — from our 35-hectare sustainable farm to the future processing facility — we’re bridging the gap between African producers and global markets.
+
+              But AfriNuts is about more than profit. We are committed to ethical trade, environmental stewardship, and reinvesting into Muslim communities through masajid, water wells, and education. This is an amāna — a trust we carry for our people, our investors, and for Allah.
+
+              We invite you to be part of this story — to plant seeds with us that will benefit generations to come, both in this world and the next."
             </p>
             <p className="ceo-signature">- Hamza S. Ralsan Sangare</p>
           </div>

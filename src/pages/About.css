@@ -273,3 +273,115 @@
     padding: 50px 20px;
   }
 }
+
+/* CEO Section */
+.ceo-section {
+  padding: 80px 20px;
+  background-color: white;
+}
+
+.ceo-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+
+.ceo-image {
+  flex: 1;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.ceo-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.ceo-message {
+  flex: 1;
+}
+
+.ceo-message h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.ceo-message p {
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+.ceo-signature {
+  font-weight: bold;
+  font-style: italic;
+}
+
+/* Brand Statement */
+.brand-statement {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.statement-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Core Values Section */
+.core-values-section {
+  padding: 80px 20px;
+  background-color: white;
+}
+
+.values-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.vision-mission-values {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  margin-bottom: 60px;
+}
+
+.vmv-card {
+  background-color: #F0F2BD;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+/* Community Values */
+.community-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+}
+
+.community-card {
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.community-icon {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .ceo-container {
+    flex-direction: column;
+  }
+  
+  .vision-mission-values,
+  .community-cards {
+    grid-template-columns: 1fr;
+  }
+}

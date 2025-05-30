@@ -140,7 +140,9 @@ const Products = () => {
                         Request Quote
                       </button>
                     ) : (
-                      <span className="coming-soon-badge">{product.comingSoon}</span>
+                      <div className="coming-soon-container">
+                        <span className="coming-soon-badge">{product.comingSoon}</span>
+                       </div>
                     )}
                   </div>
                 </div>

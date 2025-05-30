@@ -241,6 +241,13 @@
   min-height: 60px;
 }
 
+.coming-soon-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
 .modern-product-button {
   background: #F0F2BD;
   color: #4B352A;

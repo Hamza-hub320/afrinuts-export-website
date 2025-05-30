@@ -147,6 +147,7 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   gap: 30px;
+  align-items: stretch;
 }
 
 .modern-product-card {
@@ -236,6 +237,8 @@
   margin-top: auto;
   display: flex;
   justify-content: center;
+  padding: 15px 0;
+  min-height: 60px;
 }
 
 .modern-product-button {
@@ -267,6 +270,44 @@
   font-size: 0.9rem;
   font-weight: 600;
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  text-align: center;
+  max-width: 90%; 
+  word-break: keep-all;
+
+}
+
+* Adjust product card content spacing */
+.modern-product-content {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: 25px;
+}
+
+.product-body {
+  flex: 1;
+  padding: 15px 0;
+}
+
+/* Ensure enough space at the bottom */
+.modern-product-card {
+  padding-bottom: 20px;
+}
+
+.product-body {
+  overflow-y: auto;
+  max-height: 200px;
+  padding-right: 5px;
+}
+
+/* Custom scrollbar */
+.product-body::-webkit-scrollbar {
+  width: 5px;
+}
+
+.product-body::-webkit-scrollbar-thumb {
+  background: rgba(255,255,255,0.3);
+  border-radius: 10px;
 }
 
 /* CTA Section */

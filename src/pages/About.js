@@ -153,73 +153,67 @@ const About = () => {
       </section>
 
       {/* Legacy Timeline Section */}
-      <section className="timeline-section" style={{ backgroundColor: '#F0F2BD' }}>
-        <h2 style={{ color: '#4B352A', textAlign: 'center' }}>Our Journey: From Roots to Growth</h2>
-        <div className="timeline-container">
-          <div className="timeline">
-            {/* Family Legacy Item */}
-            <div className="timeline-item">
-              <div className="timeline-date" style={{ backgroundColor: '#4B352A' }}>
-                <FaTree style={{ marginRight: '8px' }} />
-                1990-2020
+      <section className="legacy-section" style={{ backgroundColor: '#F0F2BD' }}>
+        <div className="legacy-container">
+          <h2 style={{ color: '#4B352A', textAlign: 'center', marginBottom: '40px' }}>
+            From Family Roots to Global Vision
+          </h2>
+          
+          <div className="legacy-timeline">
+            {/* Family Legacy Era */}
+            <div className="era">
+              <div className="era-header" style={{ backgroundColor: '#4B352A', color: '#F0F2BD' }}>
+                <FaTree className="era-icon" />
+                <h3>Family Legacy (1990-2020)</h3>
               </div>
-              <div className="timeline-content" style={{ backgroundColor: 'white' }}>
-                <h3 style={{ color: '#4B352A' }}>Family Legacy</h3>
+              <div className="era-content">
                 <p>
-                  For 30 years, our family cultivated this land in Côte d'Ivoire, mastering 
-                  traditional cashew farming techniques passed through generations.
+                  For over 30 years, our family has cultivated this land in Côte d'Ivoire, 
+                  mastering traditional cashew farming techniques passed down through generations.
                 </p>
-                <ul className="timeline-features">
-                  <li><FaSeedling /> Sustainable farming traditions</li>
-                  <li><FaHandshake /> Community trust building</li>
+                <ul className="legacy-feats">
+                  <li><FaSeedling /> Established sustainable farming practices</li>
+                  <li><FaHandshake /> Built trust with local farming communities</li>
+                  <li><FaLeaf /> Preserved the ecological balance of our land</li>
                 </ul>
               </div>
             </div>
 
-            {/* AfriNuts Founding Item */}
-            <div className="timeline-item">
-              <div className="timeline-date" style={{ backgroundColor: '#CA7842' }}>
-                <FaChartLine style={{ marginRight: '8px' }} />
-                2023
-              </div>
-              <div className="timeline-content" style={{ backgroundColor: 'white' }}>
-                <h3 style={{ color: '#4B352A' }}>AfriNuts Launch</h3>
-                <p>
-                  Founded to take our legacy to the next level, combining generations of 
-                  knowledge with modern innovation.
-                </p>
-              </div>
+            {/* Transition Arrow */}
+            <div className="transition-arrow">
+              <FaArrowDown style={{ color: '#CA7842', fontSize: '2rem' }} />
             </div>
 
-            {/* Current Progress Item */}
-            <div className="timeline-item">
-              <div className="timeline-date" style={{ backgroundColor: '#B2CD9C', color: '#4B352A' }}>
-                <FaIndustry style={{ marginRight: '8px' }} />
-                Present
+            {/* AfriNuts Era */}
+            <div className="era">
+              <div className="era-header" style={{ backgroundColor: '#CA7842', color: '#F0F2BD' }}>
+                <FaChartLine className="era-icon" />
+                <h3>AfriNuts Evolution (2023-Present)</h3>
               </div>
-              <div className="timeline-content" style={{ backgroundColor: 'white' }}>
-                <h3 style={{ color: '#4B352A' }}>Transforming the Legacy</h3>
-                <ul className="timeline-features">
-                  <li><FaGlobe /> Expanding to global markets</li>
+              <div className="era-content">
+                <p>
+                  Today, AfriNuts Export represents our commitment to take this legacy to the next level - 
+                  combining traditional knowledge with modern innovation.
+                </p>
+                <ul className="legacy-feats">
+                  <li><FaIndustry /> Establishing processing facilities</li>
+                  <li><FaGlobe /> Expanding to international markets</li>
                   <li><FaUsers /> Empowering local communities</li>
                   <li><FaSeedling /> Implementing precision agriculture</li>
                 </ul>
               </div>
             </div>
 
-            {/* Future Vision Item */}
-            <div className="timeline-item">
-              <div className="timeline-date" style={{ backgroundColor: '#4B352A' }}>
-                <FaRocket style={{ marginRight: '8px' }} />
-                2031
+            {/* Future Vision */}
+            <div className="future-vision" style={{ borderColor: '#B2CD9C' }}>
+              <div className="vision-header">
+                <FaRocket style={{ color: '#4B352A', fontSize: '1.5rem' }} />
+                <h3 style={{ color: '#4B352A' }}>Our 2031 Vision</h3>
               </div>
-              <div className="timeline-content" style={{ backgroundColor: 'white' }}>
-                <h3 style={{ color: '#4B352A' }}>Our Vision</h3>
-                <p>
-                  To become West Africa's premier cashew exporter while maintaining our 
-                  values of sustainability and community development.
-                </p>
-              </div>
+              <p>
+                By 2031, we aim to become West Africa's premier cashew exporter while maintaining 
+                our core values of sustainability and community development.
+              </p>
             </div>
           </div>
         </div>

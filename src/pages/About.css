@@ -397,106 +397,90 @@
   }
 }
 
-/* Timeline Section */
-.timeline-section {
+/* Legacy Timeline */
+.legacy-section {
   padding: 80px 20px;
 }
 
-.timeline-container {
-  max-width: 1200px;
+.legacy-container {
+  max-width: 1000px;
   margin: 0 auto;
-  overflow-x: auto;
+}
+
+.legacy-timeline {
+  position: relative;
   padding: 20px 0;
 }
 
-.timeline {
+.era {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  margin-bottom: 30px;
+  overflow: hidden;
+}
+
+.era-header {
+  padding: 20px;
   display: flex;
-  min-width: 800px; /* Ensures horizontal layout */
-  position: relative;
-  padding-bottom: 40px;
+  align-items: center;
+  gap: 15px;
 }
 
-.timeline::before {
-  content: '';
-  position: absolute;
-  height: 4px;
-  background: #CA7842;
-  top: 50px;
-  left: 0;
-  right: 0;
-  z-index: 1;
+.era-icon {
+  font-size: 1.5rem;
 }
 
-.timeline-item {
-  flex: 1;
-  padding: 0 15px;
-  position: relative;
-  z-index: 2;
+.era-content {
+  padding: 25px;
 }
 
-.timeline-date {
-  color: white;
-  padding: 10px 15px;
-  border-radius: 20px;
+.legacy-feats {
+  margin-top: 15px;
+  list-style: none;
+  padding-left: 0;
+}
+
+.legacy-feats li {
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.transition-arrow {
   text-align: center;
-  font-weight: bold;
-  margin-bottom: 15px;
+  margin: 20px 0;
+  position: relative;
+}
+
+.future-vision {
+  background: white;
+  border-radius: 8px;
+  padding: 30px;
+  border-top: 5px solid;
+  text-align: center;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.vision-header {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: fit-content;
-  margin-left: auto;
-  margin-right: auto;
+  gap: 15px;
+  margin-bottom: 20px;
 }
 
-.timeline-content {
-  padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-  height: 100%;
-}
-
-.timeline-features {
-  list-style: none;
-  padding-left: 0;
-  margin-top: 15px;
-}
-
-.timeline-features li {
-  margin-bottom: 8px;
-  display: flex;
-  align-items: center;
-  gap: 8px;
-}
-
-/* Responsive Design */
+/* Responsive */
 @media (max-width: 768px) {
-  .timeline {
+  .era-header {
     flex-direction: column;
-    min-width: auto;
+    text-align: center;
+    gap: 10px;
   }
   
-  .timeline::before {
-    height: 100%;
-    width: 4px;
-    left: 50px;
-    top: 0;
-  }
-  
-  .timeline-item {
-    margin-bottom: 30px;
-    display: flex;
-    gap: 20px;
-    align-items: flex-start;
-  }
-  
-  .timeline-date {
-    margin: 0;
-    min-width: 100px;
-  }
-  
-  .timeline-content {
-    flex: 1;
+  .vision-header {
+    flex-direction: column;
   }
 }
 

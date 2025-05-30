@@ -1,18 +1,15 @@
-import { useState } from 'react';
+
+import { Outlet } from 'react-router-dom';
 import Navbar from '../Navbar/Navbar';
 import Footer from '../Footer/Footer';
 
-const Layout = ({ children }) => {
-  const [language, setLanguage] = useState('en');
-
-  const toggleLanguage = () => {
-    setLanguage(language === 'en' ? 'fr' : 'en');
-  };
-
+const Layout = () => {
   return (
     <>
-      <Navbar language={language} toggleLanguage={toggleLanguage} />
-      <main>{children}</main>
+      <Navbar />
+      <main>
+        <Outlet />  {/* <- This renders the active page (Home, About, etc.) */}
+      </main>
       <Footer />
     </>
   );

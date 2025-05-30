@@ -1,8 +1,10 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import './Products.css';
 import { FaLeaf, FaSeedling, FaIndustry, FaWeightHanging } from 'react-icons/fa';
 
 const Products = () => {
+  const navigate = useNavigate();
   const products = [
     {
       name: "Raw Cashew Nuts",
@@ -15,7 +17,8 @@ const Products = () => {
       icon: <FaSeedling className="product-icon" />,
       color: "#F0F2BD", // Cream
       textColor: "#4B352A", // Dark brown
-      available: true
+      available: true,
+      backgroundImage: 'raw-cashew.jpg'
     },
     {
       name: "Cashew Kernels",
@@ -29,7 +32,8 @@ const Products = () => {
       color: "#B2CD9C", // Sage green
       textColor: "#4B352A", // Dark brown
       available: false,
-      comingSoon: "Available from 2031"
+      comingSoon: "Available from 2031",
+      backgroundImage: 'cashew-kernels.jpg'
     },
     {
       name: "Cashew Butter",
@@ -43,7 +47,8 @@ const Products = () => {
       color: "#CA7842", // Rust orange
       textColor: "#F0F2BD", // Cream
       available: false,
-      comingSoon: "Coming in 2031"
+      comingSoon: "Coming in 2031",
+      backgroundImage: 'cashew-butter.jpg'
     },
     {
       name: "Cashew Nut Shell Liquid",
@@ -54,18 +59,44 @@ const Products = () => {
         "Available in bulk quantities"
       ],
       icon: <FaLeaf className="product-icon" />,
-      color: "#F0F2BD", // Cream
-      textColor: "#4B352A", // Cream
+      color: "#4B352A", // Dark brown
+      textColor: "#F0F2BD", // Cream
       available: false,
-      comingSoon: "Production starts 2031"
+      comingSoon: "Production starts 2031",
+      backgroundImage: 'cashew-nut-shell-liquid.jpg'
+    },
+    {
+      name: "Roasted Cashew Nuts",
+      description: "Premium roasted cashews with perfect crunch and flavor",
+      features: [
+        "Lightly salted or natural options",
+        "Perfect for snacking and recipes",
+        "Rich in nutrients and antioxidants"
+      ],
+      icon: <FaLeaf className="product-icon" />,
+      color: "#B2CD9C", // Sage green
+      textColor: "#4B352A", // Dark brown
+      available: false,
+      comingSoon: "Coming in 2031",
+      backgroundImage: 'roasted-cashew.jpg'
     }
   ];
 
+  const handleContactClick = () => {
+    navigate('/contact');
+  };
+
   return (
     <main className="products-page">
-      <section className="products-header" style={{ backgroundColor: '#4B352A' }}>
-        <h1 style={{ color: '#F0F2BD' }}>Our Products</h1>
-        <p style={{ color: '#B2CD9C' }}>From our farm to your table - premium quality cashew products</p>
+      {/* Hero Section with Background Image */}
+      <section 
+        className="products-hero" 
+        style={{ backgroundImage: `url(${require('../assets/images/our-product-hero.jpg')})` }}
+      >
+        <div className="hero-overlay">
+          <h1 style={{ color: '#F0F2BD' }}>Our Products</h1>
+          <p style={{ color: '#B2CD9C' }}>From our farm to your table - premium quality cashew products</p>
+        </div>
       </section>
 
       <section className="products-intro">
@@ -86,38 +117,40 @@ const Products = () => {
               key={index}
               className="product-card"
               style={{
-                backgroundColor: product.color,
+                backgroundImage: `linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url(${require(`../assets/images/${product.backgroundImage}`)})`,
                 color: product.textColor,
                 border: `1px solid ${product.textColor}`
               }}
             >
-              <div className="product-icon-container">
-                {product.icon}
-              </div>
-              <h3>{product.name}</h3>
-              <p className="product-description">{product.description}</p>
-              
-              <ul className="product-features">
-                {product.features.map((feature, i) => (
-                  <li key={i}>{feature}</li>
-                ))}
-              </ul>
-
-              {product.available ? (
-                <button 
-                  className="product-button"
-                  style={{
-                    backgroundColor: product.textColor,
-                    color: product.color
-                  }}
-                >
-                  Request Quote
-                </button>
-              ) : (
-                <div className="coming-soon" style={{ color: product.textColor }}>
-                  {product.comingSoon}
+              <div className="product-content">
+                <div className="product-icon-container">
+                  {product.icon}
                 </div>
-              )}
+                <h3>{product.name}</h3>
+                <p className="product-description">{product.description}</p>
+                
+                <ul className="product-features">
+                  {product.features.map((feature, i) => (
+                    <li key={i}>{feature}</li>
+                  ))}
+                </ul>
+
+                {product.available ? (
+                  <button 
+                    className="product-button"
+                    style={{
+                      backgroundColor: product.textColor,
+                      color: product.color
+                    }}
+                  >
+                    Request Quote
+                  </button>
+                ) : (
+                  <div className="coming-soon" style={{ color: product.textColor }}>
+                    {product.comingSoon}
+                  </div>
+                )}
+              </div>
             </div>
           ))}
         </div>
@@ -132,6 +165,7 @@ const Products = () => {
             backgroundColor: '#CA7842',
             color: '#F0F2BD'
           }}
+          onClick={handleContactClick}
         >
           Get in Touch
         </button>

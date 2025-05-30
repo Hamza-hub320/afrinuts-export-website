@@ -1,7 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
-import './Products.css';
 import { FaLeaf, FaSeedling, FaIndustry, FaWeightHanging } from 'react-icons/fa';
+import './Products.css';
 
 const Products = () => {
   const navigate = useNavigate();
@@ -78,21 +78,22 @@ const Products = () => {
 
   return (
     <main className="products-page">
-      {/* Hero Section with Background Image */}
+      {/* Hero Section */}
       <section 
         className="products-hero" 
-        style={{ backgroundImage: `url(${require('../assets/images/our-product-hero.jpg')})` }}
+        style={{ backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(${require('../assets/images/our-product-hero.jpg')})` }}
       >
-        <div className="hero-overlay">
-          <h1 style={{ color: '#F0F2BD' }}>Our Products</h1>
-          <p style={{ color: '#B2CD9C' }}>From our farm to your table - premium quality cashew products</p>
+        <div className="hero-content">
+          <h1>Our Products</h1>
+          <p>From our farm to your table - premium quality cashew products</p>
         </div>
       </section>
 
+      {/* Intro Section */}
       <section className="products-intro">
-        <div className="intro-content">
-          <h2 style={{ color: '#4B352A' }}>Quality You Can Trust</h2>
-          <p style={{ color: '#4B352A' }}>
+        <div className="intro-container">
+          <h2>Quality You Can Trust</h2>
+          <p>
             AfriNuts Export specializes in premium cashew products, with our processing facility 
             launching in 2031 to provide value-added products. Currently we offer raw cashew nuts 
             sourced from our 50-hectare farm and trusted local growers in Ivory Coast.
@@ -100,65 +101,67 @@ const Products = () => {
         </div>
       </section>
 
-      <section className="products-grid-container">
-        <div className="products-grid">
-          {products.map((product, index) => (
-            <div 
-              key={index}
-              className="product-card"
-              style={{
-                backgroundImage: `linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url(${require(`../assets/images/${product.backgroundImage}`)})`,
-                color: product.textColor,
-                border: `1px solid ${product.textColor}`
-              }}
-            >
-              <div className="product-content">
-                <div className="product-icon-container">
-                  {product.icon}
-                </div>
-                <h3>{product.name}</h3>
-                <p className="product-description">{product.description}</p>
-                
-                <ul className="product-features">
-                  {product.features.map((feature, i) => (
-                    <li key={i}>{feature}</li>
-                  ))}
-                </ul>
-
-                {product.available ? (
-                  <button 
-                    className="product-button"
-                    style={{
-                      backgroundColor: product.textColor,
-                      color: product.color
-                    }}
-                  >
-                    Request Quote
-                  </button>
-                ) : (
-                  <div className="coming-soon" style={{ color: product.textColor }}>
-                    {product.comingSoon}
+      {/* Products Grid */}
+      <section className="products-grid-section">
+        <div className="products-grid-container">
+          <div className="products-grid">
+            {products.map((product, index) => (
+              <div 
+                key={index}
+                className="modern-product-card"
+                style={{ 
+                  backgroundImage: `linear-gradient(to bottom, rgba(0,0,0,0.1) 0%, rgba(0,0,0,0.4) 70%), url(${require(`../assets/images/${product.backgroundImage}`)})`
+                }}
+              >
+                <div className="modern-product-content">
+                  <div className="product-header">
+                    <div className="product-icon-container">
+                      {product.icon}
+                    </div>
+                    <h3>{product.name}</h3>
                   </div>
-                )}
+                  
+                  <div className="product-body">
+                    <p className="product-description">{product.description}</p>
+                    
+                    <ul className="modern-features-list">
+                      {product.features.map((feature, i) => (
+                        <li key={i}>{feature}</li>
+                      ))}
+                    </ul>
+                  </div>
+                  
+                  <div className="product-footer">
+                    {product.available ? (
+                      <button 
+                        className="modern-product-button"
+                        onClick={handleContactClick}
+                      >
+                        Request Quote
+                      </button>
+                    ) : (
+                      <span className="coming-soon-badge">{product.comingSoon}</span>
+                    )}
+                  </div>
+                </div>
               </div>
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
       </section>
 
-      <section className="products-cta" style={{ backgroundColor: '#B2CD9C' }}>
-        <h2 style={{ color: '#4B352A' }}>Interested in our products?</h2>
-        <p style={{ color: '#4B352A' }}>Contact us for wholesale inquiries and pricing</p>
-        <button 
-          className="cta-button"
-          style={{
-            backgroundColor: '#CA7842',
-            color: '#F0F2BD'
-          }}
-          onClick={handleContactClick}
-        >
-          Get in Touch
-        </button>
+      {/* CTA Section */}
+      <section className="products-cta">
+        <div className="cta-container">
+          <h2>Interested in our products?</h2>
+          <p>Contact us for wholesale inquiries and pricing</p>
+          <button 
+            className="cta-button"
+            onClick={handleContactClick}
+          >
+            Get in Touch
+          </button>
+        </div>
       </section>
     </main>
   );

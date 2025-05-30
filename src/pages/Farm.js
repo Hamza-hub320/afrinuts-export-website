@@ -33,7 +33,7 @@ const Farm = () => {
         }}
       >
         <div className="hero-content">
-          <h1>Our Cashew Farm</h1>
+          <h1 style={{ color: '#F0F2BD' }}>Our Cashew Farm</h1>
           <p>Sustainably cultivating premium cashews in the heart of Ivory Coast</p>
         </div>
       </section>

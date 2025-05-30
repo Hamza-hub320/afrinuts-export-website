@@ -3,7 +3,22 @@ import React from 'react';
 import './About.css';
 import farmImage from '../assets/images/cashew-farm.jpg';
 import ceoImage from '../assets/images/ceo.jpg'; // Add your CEO image
-import { FaTree, FaMapMarkerAlt, FaUsers, FaChartLine, FaHandsHelping, FaMosque, FaWater } from 'react-icons/fa';
+import { 
+  FaTree, 
+  FaSeedling, 
+  FaHandshake, 
+  FaLeaf, 
+  FaIndustry, 
+  FaGlobe, 
+  FaUsers,
+  FaArrowDown,
+  FaRocket,
+  FaMapMarkerAlt,
+  FaChartLine,
+  FaHandsHelping,
+  FaMosque,
+  FaWater
+} from 'react-icons/fa';
 
 const About = () => {
   return (

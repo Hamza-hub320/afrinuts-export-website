@@ -390,7 +390,7 @@
 }
 
 .vmv-card:hover {
-  transform: translateY(-10px);
+  transform: scale(1.05);
 }
 
 /* Community Values */
@@ -408,7 +408,7 @@
 }
 
 .community-card:hover {
-  transform: translateY(-10px);
+  transform: scale(1.05);
 }
 
 .community-icon {

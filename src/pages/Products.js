@@ -15,8 +15,6 @@ const Products = () => {
         "Available in 50kg bags"
       ],
       icon: <FaSeedling className="product-icon" />,
-      color: "#F0F2BD", // Cream
-      textColor: "#4B352A", // Dark brown
       available: true,
       backgroundImage: 'raw-cashew.jpg'
     },
@@ -29,8 +27,6 @@ const Products = () => {
         "Vacuum-packed for freshness"
       ],
       icon: <FaWeightHanging className="product-icon" />,
-      color: "#B2CD9C", // Sage green
-      textColor: "#4B352A", // Dark brown
       available: false,
       comingSoon: "Available from 2031",
       backgroundImage: 'cashew-kernels.jpg'
@@ -44,8 +40,6 @@ const Products = () => {
         "Perfect for vegan diets"
       ],
       icon: <FaIndustry className="product-icon" />,
-      color: "#CA7842", // Rust orange
-      textColor: "#F0F2BD", // Cream
       available: false,
       comingSoon: "Coming in 2031",
       backgroundImage: 'cashew-butter.jpg'
@@ -59,8 +53,6 @@ const Products = () => {
         "Available in bulk quantities"
       ],
       icon: <FaLeaf className="product-icon" />,
-      color: "#4B352A", // Dark brown
-      textColor: "#F0F2BD", // Cream
       available: false,
       comingSoon: "Production starts 2031",
       backgroundImage: 'cashew-nut-shell-liquid.jpg'
@@ -74,8 +66,6 @@ const Products = () => {
         "Rich in nutrients and antioxidants"
       ],
       icon: <FaLeaf className="product-icon" />,
-      color: "#B2CD9C", // Sage green
-      textColor: "#4B352A", // Dark brown
       available: false,
       comingSoon: "Coming in 2031",
       backgroundImage: 'roasted-cashew.jpg'

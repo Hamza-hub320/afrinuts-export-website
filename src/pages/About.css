@@ -5,7 +5,6 @@
 }
 
 /* Hero Section */
-/* About Hero Section */
 .about-hero {
   height: 60vh;
   min-height: 400px;
@@ -330,7 +329,7 @@
 
 .ceo-image img {
   width: 100%;
-  height: auto;
+  height: 100%;
   display: block;
   object-fit: cover;
 }

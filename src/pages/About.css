@@ -33,7 +33,7 @@
 /* Mission Section */
 .mission-section {
   padding: 80px 20px;
-  background-color: white;
+  background-color: #F5ECD5;
 }
 
 .mission-content {
@@ -277,7 +277,7 @@
 /* CEO Section */
 .ceo-section {
   padding: 80px 20px;
-  background-color: white;
+  background-color: #F5ECD5;
 }
 
 .ceo-container {
@@ -289,15 +289,19 @@
 }
 
 .ceo-image {
-  flex: 1;
-  border-radius: 8px;
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
   overflow: hidden;
+  border: 5px solid #B2CD9C;
+  box-shadow: 0 5px 15px rgba(75, 53, 42, 0.2);
 }
 
 .ceo-image img {
   width: 100%;
   height: auto;
   display: block;
+  object-fit: cover;
 }
 
 .ceo-message {
@@ -333,7 +337,7 @@
 /* Core Values Section */
 .core-values-section {
   padding: 80px 20px;
-  background-color: white;
+  background-color: #F5ECD5;
 }
 
 .values-container {
@@ -383,5 +387,12 @@
   .vision-mission-values,
   .community-cards {
     grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .ceo-image {
+    max-width: 100%; /* Full width on mobile */
+    height: auto;
   }
 }

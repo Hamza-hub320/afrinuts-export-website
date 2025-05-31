@@ -1,5 +1,5 @@
 .navbar {
-  background-color: #B2CD9C;
+  background-color: #fff;
   height: 80px;
   display: flex;
   justify-content: center;
@@ -21,17 +21,27 @@
   align-items: center;
 }
 
+/* Enhanced Logo Styles */
 .navbar-logo {
-  color: #2a7d2e;
+  color: #2a7d2e; 
   justify-self: start;
   cursor: pointer;
   text-decoration: none;
-  font-size: 2rem;
+  font-size: 1.8rem;
   font-weight: bold;
   display: flex;
   align-items: center;
+  transition: all 0.3s ease;
 }
 
+.nav-logo-img {
+  height: 45px;
+  width: auto;
+  margin-right: 12px;
+  transition: all 0.3s ease;
+}
+
+/* Navigation Menu hover effect */
 .nav-menu {
   display: flex;
   align-items: center;
@@ -41,13 +51,6 @@
 
 .nav-item {
   height: 80px;
-}
-
-.nav-logo-img {
-  height: 40px;
-  width: auto;
-  margin-right: 12px;
-  transition: all 0.3s ease;
 }
 
 .nav-links {
@@ -64,75 +67,120 @@
   color: #4B352A;
 }
 
-/* Language Toggle - Compact Version */
+/* Enhanced Language Toggle - Keeping your compact version */
 .navbar-lang-toggle {
   background: rgba(255, 255, 255, 0.8);
   border: 1px solid #4B352A;
   border-radius: 20px;
-  padding: 5px 10px; 
+  padding: 5px 10px;
   display: flex;
   align-items: center;
-  justify-content: center; 
-  gap: 5px; 
+  justify-content: center;
+  gap: 5px;
   cursor: pointer;
   color: #4B352A;
   margin-left: 1rem;
   transition: all 0.3s ease;
-  width: 60px; 
-  height: 32px; 
-  align-self: center; 
-  margin-top: 0; 
-  margin-bottom: 0; 
+  width: 60px;
+  height: 32px;
 }
 
-.navbar-lang-toggle span {
-  font-size: 0.9rem; 
-  font-weight: bold;
-}
-
-.navbar-lang-toggle svg {
-  font-size: 0.9rem; 
-}
-
-/* Hover state remains the same */
 .navbar-lang-toggle:hover {
   background: #B2CD9C;
 }
 
+.navbar-lang-toggle span {
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+
+.navbar-lang-toggle svg {
+  font-size: 0.9rem;
+}
+
+/* Mobile Menu - New burger menu implementation */
+.menu-icon {
+  display: none;
+  color: #4B352A;
+  font-size: 1.8rem;
+  cursor: pointer;
+  margin-left: 1rem;
+}
+
 /* Responsive adjustments */
-@media (max-width: 768px) {
+@media (max-width: 960px) {
   .navbar-container {
     padding: 0 20px;
+    position: relative;
   }
-  
-  .navbar-logo {
-    font-size: 1.5rem;
-  }
-}
 
-@media (max-width: 480px) {
-  .navbar-logo {
-    font-size: 1.2rem;
+  .menu-icon {
+    display: block;
+  }
+
+  .nav-menu {
+    position: fixed;
+    top: 80px;
+    left: -100%;
+    width: 100%;
+    height: calc(100vh - 80px);
+    background-color: #fff;
+    flex-direction: column;
+    transition: all 0.5s ease;
+    padding-top: 20px;
+    z-index: 998;
+  }
+
+  .nav-menu.active {
+    left: 0;
+  }
+
+  .nav-item {
+    height: auto;
+    width: 100%;
+  }
+
+  .nav-links {
+    padding: 1.5rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .nav-links:hover {
+    background-color: #F0F2BD;
+  }
+
+  .navbar-lang-toggle {
+    position: absolute;
+    right: 70px;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-left: 0;
   }
 }
 
 @media (max-width: 768px) {
-  .nav-logo-img {
-    height: 30px;
-    margin-right: 8px;
-  }
-  
   .navbar-logo {
     font-size: 1.5rem;
+  }
+  
+  .nav-logo-img {
+    height: 38px;
   }
 }
 
 @media (max-width: 480px) {
-  .nav-logo-img {
-    height: 25px;
-  }
-  
   .navbar-logo {
     font-size: 1.2rem;
+  }
+  
+  .nav-logo-img {
+    height: 32px;
+  }
+  
+  .navbar-lang-toggle {
+    right: 60px;
+    width: 55px;
   }
 }

@@ -3,12 +3,28 @@ import { Link } from 'react-router-dom';
 import './Navbar.css';
 import { FaGlobe, FaBars, FaTimes } from 'react-icons/fa';
 import logo from '../../assets/images/afrinuts-export-official-logo.png';
+import { useEffect } from 'react';
+
 
 const Navbar = ({ language, toggleLanguage }) => {
   const [click, setClick] = useState(false);
 
-  const handleClick = () => setClick(!click);
-  const closeMobileMenu = () => setClick(false);
+   const handleClick = () => {
+    setClick(!click);
+    document.body.classList.toggle('menu-open', !click);
+  };
+
+  const closeMobileMenu = () => {
+    setClick(false);
+    document.body.classList.remove('menu-open');
+  };
+
+  // Cleanup on unmount
+  useEffect(() => {
+    return () => {
+      document.body.classList.remove('menu-open');
+    };
+    }, []);
 
   return (
     <nav className="navbar">

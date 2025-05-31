@@ -98,17 +98,21 @@
   font-size: 0.9rem;
 }
 
-/* Mobile Menu - New burger menu implementation */
+/* Mobile Menu - Optimized Version */
 .menu-icon {
   display: none;
   color: #4B352A;
   font-size: 1.8rem;
   cursor: pointer;
   margin-left: 1rem;
+  transition: transform 0.3s ease;
 }
 
-/* Responsive adjustments */
-@media (max-width: 960px) {
+.menu-icon:hover {
+  color: #CA7842;
+}
+
+@media screen and (max-width: 960px) {
   .navbar-container {
     padding: 0 20px;
     position: relative;
@@ -116,19 +120,27 @@
 
   .menu-icon {
     display: block;
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-left: 0;
   }
 
   .nav-menu {
+    display: flex;
+    flex-direction: column;
+    width: 100vw; /* Full viewport width */
+    height: calc(100vh - 80px);
     position: fixed;
     top: 80px;
-    left: -100%;
-    width: 100%;
-    height: calc(100vh - 80px);
+    left: -100vw; /* Match width */
     background-color: #fff;
-    flex-direction: column;
-    transition: all 0.5s ease;
-    padding-top: 20px;
+    transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+    padding: 20px 0 0;
+    margin: 0;
     z-index: 998;
+    overflow-y: auto;
   }
 
   .nav-menu.active {
@@ -136,8 +148,10 @@
   }
 
   .nav-item {
-    height: auto;
     width: 100%;
+    padding: 0;
+    margin: 0;
+    border-bottom: 1px solid rgba(75, 53, 42, 0.1);
   }
 
   .nav-links {
@@ -145,10 +159,13 @@
     width: 100%;
     display: flex;
     justify-content: center;
+    margin: 0;
+    transition: all 0.2s ease;
   }
 
   .nav-links:hover {
     background-color: #F0F2BD;
+    color: #4B352A;
   }
 
   .navbar-lang-toggle {
@@ -156,7 +173,13 @@
     right: 70px;
     top: 50%;
     transform: translateY(-50%);
-    margin-left: 0;
+  }
+
+  /* Prevent scrolling when menu is open */
+  body.menu-open {
+    overflow: hidden;
+    position: fixed;
+    width: 100%;
   }
 }
 
@@ -167,6 +190,14 @@
   
   .nav-logo-img {
     height: 38px;
+  }
+  
+  .nav-menu {
+    padding-top: 15px;
+  }
+  
+  .nav-links {
+    padding: 1.25rem;
   }
 }
 
@@ -182,5 +213,16 @@
   .navbar-lang-toggle {
     right: 60px;
     width: 55px;
+    font-size: 0.8rem;
+  }
+  
+  .nav-links {
+    padding: 1rem;
+    font-size: 1.1rem;
+  }
+  
+  .menu-icon {
+    font-size: 1.6rem;
+    right: 15px;
   }
 }

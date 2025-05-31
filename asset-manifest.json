@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/afrinuts-export-website/static/css/main.59060a40.css",
-    "main.js": "/afrinuts-export-website/static/js/main.9d3aa243.js",
+    "main.css": "/afrinuts-export-website/static/css/main.a98b1472.css",
+    "main.js": "/afrinuts-export-website/static/js/main.d442e9b4.js",
     "static/js/453.04a11e05.chunk.js": "/afrinuts-export-website/static/js/453.04a11e05.chunk.js",
     "static/media/our-product-hero.jpg": "/afrinuts-export-website/static/media/our-product-hero.d269d73d9b79098ec5b3.jpg",
     "static/media/cashew-nut-shell-liquid.jpg": "/afrinuts-export-website/static/media/cashew-nut-shell-liquid.b976f96ad11ad9abab3c.jpg",
@@ -32,12 +32,12 @@
     "static/media/roasted-cashew.jpg": "/afrinuts-export-website/static/media/roasted-cashew.741f7ebf364f6841ed2c.jpg",
     "static/media/afrinuts-export-official-logo.png": "/afrinuts-export-website/static/media/afrinuts-export-official-logo.7f804d81dd9ad06ca291.png",
     "index.html": "/afrinuts-export-website/index.html",
-    "main.59060a40.css.map": "/afrinuts-export-website/static/css/main.59060a40.css.map",
-    "main.9d3aa243.js.map": "/afrinuts-export-website/static/js/main.9d3aa243.js.map",
+    "main.a98b1472.css.map": "/afrinuts-export-website/static/css/main.a98b1472.css.map",
+    "main.d442e9b4.js.map": "/afrinuts-export-website/static/js/main.d442e9b4.js.map",
     "453.04a11e05.chunk.js.map": "/afrinuts-export-website/static/js/453.04a11e05.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.59060a40.css",
-    "static/js/main.9d3aa243.js"
+    "static/css/main.a98b1472.css",
+    "static/js/main.d442e9b4.js"
   ]
 }

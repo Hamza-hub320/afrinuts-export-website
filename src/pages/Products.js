@@ -69,8 +69,22 @@ const Products = () => {
       available: false,
       comingSoon: "Coming in 2031",
       backgroundImage: 'roasted-cashew.jpg'
-    }
+    },
+    {
+    name: "Cashew Milk",
+    description: "Creamy, dairy-free alternative rich in vitamins and minerals",
+    features: [
+      "Unsweetened and original varieties",
+      "Fortified with calcium and vitamin D",
+      "Perfect for coffee, smoothies, and baking"
+    ],
+    icon: <FaLeaf className="product-icon" />,
+    available: false,
+    comingSoon: "Coming in 2031",
+    backgroundImage: 'cashew-milk.jpg'
+  }
   ];
+
 
   const handleContactClick = () => {
     navigate('/contact');

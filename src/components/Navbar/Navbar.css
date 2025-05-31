@@ -1,5 +1,5 @@
 .navbar {
-  background-color: #F0F2BD;
+  background-color: #B2CD9C;
   height: 80px;
   display: flex;
   justify-content: center;
@@ -61,7 +61,7 @@
 }
 
 .nav-links:hover {
-  color: #2a7d2e;
+  color: #4B352A;
 }
 
 /* Language Toggle - Compact Version */
@@ -96,7 +96,7 @@
 
 /* Hover state remains the same */
 .navbar-lang-toggle:hover {
-  background: #F0F2BD;
+  background: #B2CD9C;
 }
 
 /* Responsive adjustments */

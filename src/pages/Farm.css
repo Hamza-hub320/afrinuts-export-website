@@ -79,10 +79,10 @@
 /* Timeline Section with Background Image */
 .timeline-section {
   padding: 80px 20px;
-  background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), 
-              url('../assets/images/about-hero.jpg') center/cover no-repeat;
+  background: url('../assets/images/about-hero.jpg') center/cover no-repeat;
   text-align: center;
   position: relative;
+  color: #4B352A;
 }
 
 .timeline-section h2 {
@@ -90,6 +90,7 @@
   margin-bottom: 50px;
   color: #4B352A;
   position: relative;
+   text-shadow: 1px 1px 3px rgba(255, 255, 255, 0.8);
 }
 
 .timeline-section h2::after {
@@ -110,8 +111,8 @@
 .timeline:before {
   content: '';
   position: absolute;
-  width: 2px;
-  background-color: #CA7842;
+  width: 3px;
+  background-color: rgba(202, 120, 66, 0.8);
   top: 0;
   bottom: 0;
   left: 50%;
@@ -139,13 +140,14 @@
 
 .timeline-date {
   color: white;
-  background-color: #4B352A;
+  background-color: rgba(75, 53, 42, 0.9);
   padding: 10px 20px;
   border-radius: 20px;
   position: absolute;
   top: 0;
   font-weight: bold;
   z-index: 2;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16);
 }
 
 .timeline-item:nth-child(odd) .timeline-date {
@@ -158,9 +160,10 @@
 
 .timeline-content {
   padding: 20px;
-  background-color: rgba(240, 242, 189, 0.9);
+  background-color: rgba(240, 242, 189, 0.85); 
   border-radius: 8px;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+  border: 1px solid rgba(75, 53, 42, 0.2);
   position: relative;
   z-index: 2;
 }
@@ -181,6 +184,29 @@
   .timeline-item:nth-child(odd) {
     left: 0;
     text-align: left;
+  }
+  
+  .timeline-item:nth-child(odd) .timeline-date,
+  .timeline-item:nth-child(even) .timeline-date {
+    left: -15px;
+    right: auto;
+    top: 15px;
+  }
+}
+
+@media (max-width: 768px) {
+  .timeline-section {
+    padding: 60px 15px;
+  }
+  
+  .timeline:before {
+    left: 31px;
+  }
+  
+  .timeline-item {
+    width: 100%;
+    padding-left: 70px;
+    padding-right: 25px;
   }
   
   .timeline-item:nth-child(odd) .timeline-date,

@@ -34,7 +34,7 @@ const About = () => {
           }}
         >
           <div className="hero-content">
-            <h1 style={{ color: '#F0F2BD' }}>Our Story</h1>
+            <h1 style={{ color: '#B2CD9C' }}>Our Story</h1>
             <p style={{ color: '#B2CD9C' }}>Transforming the cashew value chain in Ivory Coast</p>
           </div>
         </section>
@@ -62,7 +62,7 @@ const About = () => {
       </section>
 
       {/* Brand Statement Section */}
-      <section className="brand-statement" style={{ backgroundColor: '#F0F2BD' }}>
+      <section className="brand-statement" style={{ backgroundColor: '#F5ECD5' }}>
         <div className="statement-container">
           <h2 style={{ color: '#4B352A' }}>Our Brand Promise</h2>
           <p style={{ color: '#4B352A' }}>
@@ -112,7 +112,7 @@ const About = () => {
                   wells, mosques, and madrassas in our farming regions.
                 </p>
               </div>
-              <div className="community-card" style={{ backgroundColor: '#F0F2BD' }}>
+              <div className="community-card" style={{ backgroundColor: '#94B4C1' }}>
                 <FaWater className="community-icon" style={{ color: '#4B352A' }} />
                 <h3 style={{ color: '#4B352A' }}>Clean Water Initiative</h3>
                 <p>
@@ -132,7 +132,7 @@ const About = () => {
       </section>
 
       {/* Farm Section */}
-      <section className="farm-section" style={{ backgroundColor: '#F0F2BD' }}>
+      <section className="farm-section" style={{ backgroundColor: '#B2CD9C' }}>
         <div className="farm-content">
           <div className="farm-text">
             <h2 style={{ color: '#4B352A' }}>Our Farm in Odienné</h2>
@@ -164,7 +164,7 @@ const About = () => {
       </section>
 
       {/* Legacy Timeline Section */}
-      <section className="legacy-section" style={{ backgroundColor: '#F0F2BD' }}>
+      <section className="legacy-section" style={{ backgroundColor: '#B2CD9C' }}>
         <div className="legacy-container">
           <h2 style={{ color: '#4B352A', textAlign: 'center', marginBottom: '40px' }}>
             From Family Roots to Global Vision

@@ -101,7 +101,7 @@
 /* Farm Section */
 .farm-section {
   padding: 80px 20px;
-  background-color: #F0F2BD;
+  background-color: #B2CD9C;
 }
 
 .farm-content {
@@ -307,7 +307,7 @@
 /* CEO Section */
 .ceo-section {
   padding: 80px 20px;
-  background-color: #F5ECD5;
+  background-color: #f9f9f9;
 }
 
 .ceo-container {
@@ -383,7 +383,7 @@
 }
 
 .vmv-card {
-  background-color: #F0F2BD;
+  background-color: #f9f9f9;
   padding: 30px;
   border-radius: 8px;
   box-shadow: 0 5px 15px rgba(0,0,0,0.1);

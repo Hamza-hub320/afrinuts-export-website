@@ -127,10 +127,13 @@ const Contact = () => {
       )}
 
       {/* Hero Section */}
-      <section className="contact-hero">
+      <section 
+        className="contact-hero" 
+        style={{ backgroundImage: `linear-gradient(rgba(75, 53, 42, 0.7), rgba(75, 53, 42, 0.7)), url(${require('../assets/images/contact-hero.jpg')})` }}
+      >
         <div className="hero-content">
-          <h1>Contact Us</h1>
-          <p>Get in touch with our team for inquiries and partnerships</p>
+          <h1 style={{ color: '#B2CD9C' }}>Contact Us</h1>
+          <p style={{ color: '#B2CD9C' }}>Get in touch with our team for inquiries and partnerships</p>
         </div>
       </section>
 

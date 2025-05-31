@@ -3,7 +3,7 @@
   --primary: #4B352A;       /* Dark brown */
   --accent: #CA7842;        /* Rust orange */
   --secondary: #B2CD9C;     /* Sage green */
-  --background: #BF9264;    /* New warm tan */
+  --background: #B2CD9C;    /* New warm tan */
   --text-dark: #4B352A;
   --text-light: #F8F5F0;  
   
@@ -35,13 +35,6 @@ button {
   padding: 20px;
 }
 
-/* Additional recommended styles */
-body {
-  background: linear-gradient(to bottom, 
-    var(--background), 
-    #D4B38B); /* Slightly darker at bottom */
-  min-height: 100vh;
-}
 
 /* For text containers */
 .content-box {

@@ -84,7 +84,7 @@ const Products = () => {
         style={{ backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(${require('../assets/images/our-product-hero.jpg')})` }}
       >
         <div className="hero-content">
-          <h1>Our Products</h1>
+          <h1 style={{ color: '#B2CD9C' }}>Our Products</h1>
           <p style={{ color: '#B2CD9C' }}>From our farm to your table - premium quality cashew products</p>
         </div>
       </section>

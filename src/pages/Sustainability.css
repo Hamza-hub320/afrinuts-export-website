@@ -1,0 +1,117 @@
+/* Sustainability Page - Professional Styling */
+.sustainability-page {
+  color: var(--text-dark);
+  line-height: 1.8;
+}
+
+/* Hero Section */
+.sustainability-hero {
+  background: linear-gradient(rgba(75, 53, 42, 0.7), rgba(75, 53, 42, 0.7)),
+              url('../assets/images/sustainability-hero.jpg') center/cover no-repeat;
+  height: 45vh;
+  min-height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #B2CD9C;
+}
+
+/* Practice Cards */
+.practice-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.practice-card {
+  background: #F8F5F0;
+  padding: 2.5rem;
+  border-radius: 8px;
+  box-shadow: 0 5px 30px rgba(0,0,0,0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 1px solid rgba(178, 205, 156, 0.3);
+}
+
+.practice-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+}
+
+.practice-card h3 {
+  color: var(--primary);
+  margin-bottom: 1.5rem;
+  font-size: 1.5rem;
+}
+
+/* Report Section */
+.report-section {
+  background: linear-gradient(135deg, var(--primary) 0%, #F8F5F0 100%);
+  color: #F8F5F0;
+  padding: 5rem 0;
+}
+
+.report-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: center;
+}
+
+.download-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: #F8F5F0;
+  color: var(--primary);
+  padding: 1rem 2rem;
+  border-radius: 50px;
+  margin-top: 2rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.download-button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+  .grid-layout,
+  .report-content {
+    grid-template-columns: 1fr;
+  }
+  
+  .image-content {
+    margin-top: 2rem;
+    order: -1;
+  }
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+  
+  h2 {
+    font-size: 2rem;
+  }
+  
+  .practice-cards {
+    grid-template-columns: 1fr;
+  }
+}
+
+.sustainability-page h2:after {
+  background: var(--secondary);
+}
+
+/* Add this to your CSS to remove all decorative lines */
+h2:after, 
+h3:after, 
+.section-title:after {
+  display: none !important;
+}

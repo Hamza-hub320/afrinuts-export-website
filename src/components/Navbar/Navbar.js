@@ -1,15 +1,31 @@
-import { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { useState, useEffect } from 'react';
+import { Link, useLocation } from 'react-router-dom';
 import './Navbar.css';
 import { FaGlobe, FaBars, FaTimes } from 'react-icons/fa';
 import logo from '../../assets/images/afrinuts-export-official-logo.png';
-import { useEffect } from 'react';
-
 
 const Navbar = ({ language, toggleLanguage }) => {
+  const location = useLocation();
   const [click, setClick] = useState(false);
 
-   const handleClick = () => {
+  // Improved route matching function
+  const isActive = (path) => {
+    if (path === '/') {
+      return location.pathname === '/';
+    }
+    return location.pathname.startsWith(path);
+  };
+
+  // Navigation items data
+  const navItems = [
+    { path: '/', name: 'Home' },
+    { path: '/about', name: 'About' },
+    { path: '/products', name: 'Products' },
+    { path: '/farm', name: 'Our Farm' },
+    { path: '/contact', name: 'Contact' },
+  ];
+
+  const handleClick = () => {
     setClick(!click);
     document.body.classList.toggle('menu-open', !click);
   };
@@ -24,7 +40,7 @@ const Navbar = ({ language, toggleLanguage }) => {
     return () => {
       document.body.classList.remove('menu-open');
     };
-    }, []);
+  }, []);
 
   return (
     <nav className="navbar">
@@ -45,21 +61,20 @@ const Navbar = ({ language, toggleLanguage }) => {
 
         {/* Navigation Menu */}
         <ul className={click ? 'nav-menu active' : 'nav-menu'}>
-          <li className="nav-item">
-            <Link to="/" className="nav-links" onClick={closeMobileMenu}>Home</Link>
-          </li>
-          <li className="nav-item">
-            <Link to="/about" className="nav-links" onClick={closeMobileMenu}>About</Link>
-          </li>
-          <li className="nav-item">
-            <Link to="/products" className="nav-links" onClick={closeMobileMenu}>Products</Link>
-          </li>
-          <li className="nav-item">
-            <Link to="/farm" className="nav-links" onClick={closeMobileMenu}>Our Farm</Link>
-          </li>
-          <li className="nav-item">
-            <Link to="/contact" className="nav-links" onClick={closeMobileMenu}>Contact</Link>
-          </li>
+          {navItems.map((item) => (
+            <li className="nav-item" key={item.path}>
+              <Link
+                to={item.path}
+                className={`nav-links ${isActive(item.path) ? 'active' : ''}`}
+                onClick={closeMobileMenu}
+              >
+                {item.name}
+                {isActive(item.path) && (
+                  <span className="visually-hidden">(current)</span>
+                )}
+              </Link>
+            </li>
+          ))}
         </ul>
 
         {/* Language Toggle */}

@@ -81,7 +81,7 @@ const About = () => {
               <h3 style={{ color: '#4B352A' }}>Our Vision</h3>
               <p>
                 To revolutionize West Africa's cashew industry by becoming a global leader in 
-                quality, sustainability, and community impact by 2031.
+                quality, sustainability, and community impact by 2040.
               </p>
             </div>
             <div className="vmv-card">
@@ -216,7 +216,7 @@ const About = () => {
             </div>
 
             {/* Future Vision */}
-            <div className="future-vision" style={{ borderColor: '#B2CD9C' }}>
+            <div className="future-vision" style={{ borderColor: '#94B4C1' }}>
               <div className="vision-header">
                 <FaRocket style={{ color: '#4B352A', fontSize: '1.5rem' }} />
                 <h3 style={{ color: '#4B352A' }}>Our 2031 Vision</h3>

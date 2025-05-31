@@ -105,3 +105,33 @@ button:hover {
     padding: 40px 0;
   }
 }
+
+:root {
+  --highlight-color: rgba(202, 120, 66, 0.2);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.target-section {
+  scroll-margin-top: 100px;
+}
+
+:target {
+  animation: highlight 1.5s ease;
+}
+
+@keyframes highlight {
+  0% { background-color: var(--highlight-color); }
+  100% { background-color: transparent; }
+}
+
+/* Add to global styles for image consistency */
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+  font-style: italic; /* Fallback for alt text */
+}
+

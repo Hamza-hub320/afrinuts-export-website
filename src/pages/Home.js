@@ -3,6 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import './Home.css';
 import heroImage from '../assets/images/hero.jpg';
 import { FaChevronDown, FaGlobe } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
 
 const Home = () => {
   const [language, setLanguage] = useState('en');

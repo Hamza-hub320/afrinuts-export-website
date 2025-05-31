@@ -23,7 +23,7 @@ const Farm = () => {
           backgroundSize: 'cover',
           backgroundPosition: 'center',
           backgroundRepeat: 'no-repeat',
-          height: '60vh',
+          height: '45vh',
           minHeight: '400px',
           display: 'flex',
           alignItems: 'center',

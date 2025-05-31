@@ -6,7 +6,7 @@
 
 /* Hero Section */
 .contact-hero {
-  height: 60vh;
+  height: 45vh;
   min-height: 400px;
   background-size: cover;
   background-position: center;
@@ -62,14 +62,14 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 40px;
-  max-width: 1200px;
+  max-width: 2200px;
   margin: 0px auto;
   padding: 0 20px;
 }
 
 /* Contact Form */
 .contact-form-section {
-  background-color: #F8F5F0;
+  background-color: #B2CD9C;
   padding: 40px;
   border-radius: 8px;
   box-shadow: 0 5px 15px rgba(0,0,0,0.1);
@@ -127,7 +127,7 @@
 
 /* Contact Info */
 .contact-info-section {
-  background-color: #F8F5F0;
+  background-color: #B2CD9C;
   padding: 40px;
   border-radius: 8px;
   box-shadow: 0 5px 15px rgba(0,0,0,0.1);

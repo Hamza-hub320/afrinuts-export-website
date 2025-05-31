@@ -78,7 +78,7 @@
 
 /* Timeline Section with Background Image */
 .timeline-section {
-  padding: 80px 150px;
+  padding: 80px 255px;
   background: url('../assets/images/about-hero.jpg') center/cover no-repeat;
   text-align: center;
   position: relative;

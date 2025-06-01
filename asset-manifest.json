@@ -1,11 +1,16 @@
 {
   "files": {
-    "main.css": "/afrinuts-export-website/static/css/main.a98b1472.css",
-    "main.js": "/afrinuts-export-website/static/js/main.d442e9b4.js",
+    "main.css": "/afrinuts-export-website/static/css/main.57336a9c.css",
+    "main.js": "/afrinuts-export-website/static/js/main.f53525fe.js",
     "static/js/453.04a11e05.chunk.js": "/afrinuts-export-website/static/js/453.04a11e05.chunk.js",
+    "static/media/profile-infographic.jpg": "/afrinuts-export-website/static/media/profile-infographic.84db9e82a5b49304099a.jpg",
     "static/media/our-product-hero.jpg": "/afrinuts-export-website/static/media/our-product-hero.d269d73d9b79098ec5b3.jpg",
+    "static/media/sustainability-hero.jpg": "/afrinuts-export-website/static/media/sustainability-hero.3ccf2718c164e0cd1b4f.jpg",
+    "static/media/corporate-hero.jpg": "/afrinuts-export-website/static/media/corporate-hero.30399176071e6c32b00f.jpg",
     "static/media/cashew-nut-shell-liquid.jpg": "/afrinuts-export-website/static/media/cashew-nut-shell-liquid.b976f96ad11ad9abab3c.jpg",
+    "static/media/sustainability-practices.jpg": "/afrinuts-export-website/static/media/sustainability-practices.b1da6a41cc0c0582310f.jpg",
     "static/media/raw-cashew.jpg": "/afrinuts-export-website/static/media/raw-cashew.111a8bd1ad4b48d513d6.jpg",
+    "static/media/company-timeline.jpg": "/afrinuts-export-website/static/media/company-timeline.791b6ed5c2cdf3abd9a9.jpg",
     "static/media/cashew-633921.jpg": "/afrinuts-export-website/static/media/cashew-633921.4ac591dc9c49f7ecfd5e.jpg",
     "static/media/pexels-quang-nguyen-vinh-222549-10615962.jpg": "/afrinuts-export-website/static/media/pexels-quang-nguyen-vinh-222549-10615962.0f11d3e71310ef8468bd.jpg",
     "static/media/cashew-kernels.jpg": "/afrinuts-export-website/static/media/cashew-kernels.00c8058de56d3ce01ded.jpg",
@@ -32,12 +37,12 @@
     "static/media/roasted-cashew.jpg": "/afrinuts-export-website/static/media/roasted-cashew.741f7ebf364f6841ed2c.jpg",
     "static/media/afrinuts-export-official-logo.png": "/afrinuts-export-website/static/media/afrinuts-export-official-logo.7f804d81dd9ad06ca291.png",
     "index.html": "/afrinuts-export-website/index.html",
-    "main.a98b1472.css.map": "/afrinuts-export-website/static/css/main.a98b1472.css.map",
-    "main.d442e9b4.js.map": "/afrinuts-export-website/static/js/main.d442e9b4.js.map",
+    "main.57336a9c.css.map": "/afrinuts-export-website/static/css/main.57336a9c.css.map",
+    "main.f53525fe.js.map": "/afrinuts-export-website/static/js/main.f53525fe.js.map",
     "453.04a11e05.chunk.js.map": "/afrinuts-export-website/static/js/453.04a11e05.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.a98b1472.css",
-    "static/js/main.d442e9b4.js"
+    "static/css/main.57336a9c.css",
+    "static/js/main.f53525fe.js"
   ]
 }

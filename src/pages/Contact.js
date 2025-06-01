@@ -1,4 +1,3 @@
-import React, { useState, useEffect } from 'react'; 
 import './Contact.css';
 import { FaMapMarkerAlt, FaPhone, FaEnvelope, FaClock, FaPaperclip, FaCheckCircle } from 'react-icons/fa';
 import emailjs from '@emailjs/browser';

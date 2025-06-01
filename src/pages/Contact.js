@@ -1,6 +1,7 @@
 import './Contact.css';
 import { FaMapMarkerAlt, FaPhone, FaEnvelope, FaClock, FaPaperclip, FaCheckCircle } from 'react-icons/fa';
 import emailjs from '@emailjs/browser';
+import React, { useState } from 'react';
 
 const Contact = () => {
   const [formData, setFormData] = useState({

@@ -1,7 +1,9 @@
 /* Contact Page Styles */
 .contact-page {
-  font-family: 'Arial', sans-serif;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
   color: #4B352A;
+  line-height: 1.6;
+  background-color: #F8F5F0;
 }
 
 /* Hero Section */
@@ -61,10 +63,10 @@
 .contact-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 40px;
-  max-width: 2200px;
-  margin: 0px auto;
-  padding: 0 20px;
+  gap: 60px;
+  max-width: 1000px;
+  margin: 100px auto;
+  padding: 0 40px;
 }
 
 /* Contact Form */
@@ -110,7 +112,7 @@
 
 .submit-button {
   background-color: #CA7842;
-  color: white;
+  color: #F8F5F0;
   padding: 12px 30px;
   border: none;
   border-radius: 4px;
@@ -175,12 +177,12 @@ background-color: #F8F5F0;
 
 .map-section h2 {
   font-size: 2.5rem;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
   color: #4B352A;
 }
 
 .map-container {
-  max-width: 1200px;
+  max-width: 2200px;
   margin: 0 auto;
   border-radius: 8px;
   overflow: hidden;

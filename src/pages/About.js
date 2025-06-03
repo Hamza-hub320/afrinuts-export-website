@@ -31,7 +31,6 @@ const About = () => {
             <img src={ceoImage} alt={t('ceo.alt')} />
           </div>
           <div className="ceo-message">
-<<<<<<< HEAD
             <h2 style={{ color: '#4B352A' }}>A Message From Our CEO</h2>
             <p>
               "At AfriNuts Export, we’re not just building a business, we’re cultivating a legacy rooted in responsibility, heritage, and hope. 
@@ -42,11 +41,9 @@ const About = () => {
               But AfriNuts is about more than profit. We are committed to ethical trade, environmental stewardship, and reinvesting in Muslim communities through masajid, water wells, and education. 
               This is an amāna, a trust we carry for our people, investors, and Allah. We invite you to be part of this story and plant seeds with us that will benefit future generations in this world and the next."</p>
             <p className="ceo-signature">- Hamza S. Ralsan Sangare</p>
-=======
             <h2>{t('ceo.title')}</h2>
             <p>{t('ceo.message')}</p>
             <p className="ceo-signature">{t('ceo.signature')}</p>
->>>>>>> 858fe4b (Implement i18n translation with i18next and EmailJS contact form setup)
           </div>
         </div>
       </section>

@@ -1,4 +1,5 @@
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 import './Farm.css';
 import farmImage1 from '../assets/images/farm-1.jpg'; 
 import farmImage2 from '../assets/images/farm-2.jpg';
@@ -6,11 +7,13 @@ import farmHero from '../assets/images/farm-hero.jpg';
 import { FaTree, FaMapMarkerAlt, FaCalendarAlt, FaLeaf } from 'react-icons/fa';
 
 const Farm = () => {
+  const { t } = useTranslation('farm');
+
   const farmStats = [
-    { icon: <FaTree />, value: "50 Hectares", label: "Total Area" },
-    { icon: <FaMapMarkerAlt />, value: "Odienné", label: "Location" },
-    { icon: <FaCalendarAlt />, value: "2026-2031", label: "Development Phase" },
-    { icon: <FaLeaf />, value: "Sustainable", label: "Farming Practices" }
+    { icon: <FaTree />, value: t('stats.area'), label: t('stats.areaLabel') },
+    { icon: <FaMapMarkerAlt />, value: t('stats.location'), label: t('stats.locationLabel') },
+    { icon: <FaCalendarAlt />, value: t('stats.phase'), label: t('stats.phaseLabel') },
+    { icon: <FaLeaf />, value: t('stats.practices'), label: t('stats.practicesLabel') }
   ];
 
   return (
@@ -33,20 +36,16 @@ const Farm = () => {
         }}
       >
         <div className="hero-content">
-          <h1 style={{ color: '#B2CD9C' }}>Our Cashew Farm</h1>
-          <p style={{ color: '#B2CD9C' }}>Sustainably cultivating premium cashews in the heart of Ivory Coast</p>
+          <h1>{t('hero.title')}</h1>
+          <p>{t('hero.subtitle')}</p>
         </div>
       </section>
 
       {/* Farm Overview */}
       <section className="farm-overview">
         <div className="overview-content">
-          <h2>50 Hectares of Premium Cashews</h2>
-          <p>
-            Located in Odienné, the cashew belt of Ivory Coast, our family-owned farm 
-            is being developed using sustainable agricultural practices to produce 
-            the highest quality raw cashew nuts.
-          </p>
+          <h2>{t('overview.heading')}</h2>
+          <p>{t('overview.description')}</p>
           <div className="stats-grid">
             {farmStats.map((stat, index) => (
               <div key={index} className="stat-card">
@@ -61,61 +60,43 @@ const Farm = () => {
 
       {/* Farm Development Timeline */}
       <section className="timeline-section">
-        <h2>Our Development Timeline</h2>
+        <h2>{t('timeline.title')}</h2>
         <div className="timeline">
-          <div className="timeline-item">
-            <div className="timeline-date">2026</div>
-            <div className="timeline-content">
-              <h3>Land Preparation</h3>
-              <p>Soil analysis, land clearing, and irrigation setup</p>
+          {[2026, 2027, 2031].map((year, idx) => (
+            <div key={year} className="timeline-item">
+              <div className="timeline-date">{year}</div>
+              <div className="timeline-content">
+                <h3>{t(`timeline.items.${idx}.title`)}</h3>
+                <p>{t(`timeline.items.${idx}.description`)}</p>
+              </div>
             </div>
-          </div>
-          <div className="timeline-item">
-            <div className="timeline-date">2027</div>
-            <div className="timeline-content">
-              <h3>Planting Begins</h3>
-              <p>Initial planting of cashew trees across 35 hectares</p>
-            </div>
-          </div>
-          <div className="timeline-item">
-            <div className="timeline-date">2031</div>
-            <div className="timeline-content">
-              <h3>First Harvest</h3>
-              <p>Expected first commercial harvest from our plantation</p>
-            </div>
-          </div>
+          ))}
         </div>
       </section>
 
       {/* Gallery Section */}
       <section className="gallery-section">
-        <h2>Farm Gallery</h2>
+        <h2>{t('gallery.title')}</h2>
         <div className="gallery-grid">
           <div className="gallery-item">
-            <img src={farmImage1} alt="Cashew plantation" />
+            <img src={farmImage1} alt={t('gallery.alt1')} />
           </div>
           <div className="gallery-item">
-            <img src={farmImage2} alt="Farm development" />
+            <img src={farmImage2} alt={t('gallery.alt2')} />
           </div>
         </div>
       </section>
 
       {/* Sustainability Section */}
       <section className="sustainability-section">
-        <h2>Sustainable Farming Practices</h2>
+        <h2>{t('sustainability.title')}</h2>
         <div className="practices-grid">
-          <div className="practice-card">
-            <h3>Water Conservation</h3>
-            <p>Efficient irrigation systems to minimize water usage</p>
-          </div>
-          <div className="practice-card">
-            <h3>Organic Methods</h3>
-            <p>Minimal chemical inputs, natural pest control</p>
-          </div>
-          <div className="practice-card">
-            <h3>Soil Health</h3>
-            <p>Crop rotation and organic matter to maintain fertility</p>
-          </div>
+          {[0, 1, 2].map((i) => (
+            <div className="practice-card" key={i}>
+              <h3>{t(`sustainability.items.${i}.title`)}</h3>
+              <p>{t(`sustainability.items.${i}.description`)}</p>
+            </div>
+          ))}
         </div>
       </section>
     </div>

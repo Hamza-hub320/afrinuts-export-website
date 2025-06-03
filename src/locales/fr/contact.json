@@ -1,0 +1,41 @@
+{
+  "hero": {
+    "title": "Contactez-nous",
+    "subtitle": "Contactez notre équipe pour toute demande ou partenariat"
+  },
+  "form": {
+    "title": "Envoyez-nous un message",
+    "name": "Votre nom*",
+    "email": "Adresse e-mail*",
+    "subject": "Objet*",
+    "message": "Message*",
+    "file": "Joindre un fichier (optionnel, max 5Mo)",
+    "submit": "Envoyer le message",
+    "sending": "Envoi..."
+  },
+  "info": {
+    "title": "Nos coordonnées",
+    "address": "Adresse",
+    "phone": "Téléphone",
+    "email": "Email",
+    "hours": "Lun-Ven : 8h-17h",
+    "businessHours": "Heures d'ouverture"
+  },
+  "map": {
+    "title": "Notre emplacement"
+  },
+  "success": {
+    "title": "Message envoyé avec succès !",
+    "message": "Nous vous répondrons bientôt.",
+    "close": "Fermer"
+  },
+  "errors": {
+    "name": "Le nom est requis",
+    "emailRequired": "L'e-mail est requis",
+    "emailInvalid": "L'e-mail est invalide",
+    "subject": "L'objet est requis",
+    "message": "Le message est requis",
+    "fileSize": "La taille du fichier doit être inférieure à 5 Mo",
+    "submit": "Échec de l'envoi. Veuillez réessayer plus tard."
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "navbar": {
+    "home": "Home",
+    "about": "About",
+    "products": "Products",
+    "farm": "Our Farm",
+    "contact": "Contact"
+  },
+  "language": {
+    "en": "EN",
+    "fr": "FR"
+  }
+}

@@ -1,51 +1,37 @@
-
 import React from 'react';
 import './About.css';
+import { useTranslation } from 'react-i18next';
 import farmImage from '../assets/images/cashew-farm.jpg';
 import ceoImage from '../assets/images/ceo.jpg';
-import { 
-  FaTree, 
-  FaSeedling, 
-  FaHandshake, 
-  FaLeaf, 
-  FaIndustry, 
-  FaGlobe, 
-  FaUsers,
-  FaArrowDown,
-  FaRocket,
-  FaMapMarkerAlt,
-  FaChartLine,
-  FaHandsHelping,
-  FaMosque,
-  FaWater
+import {
+  FaTree, FaSeedling, FaHandshake, FaLeaf, FaIndustry, FaGlobe, FaUsers,
+  FaArrowDown, FaRocket, FaMapMarkerAlt, FaChartLine, FaHandsHelping, FaMosque, FaWater
 } from 'react-icons/fa';
 
 const About = () => {
+  const { t } = useTranslation('about');
+
   return (
     <main className="about-page">
       {/* Hero Section */}
-        <section 
-          className="about-hero" 
-          style={{ 
-            backgroundImage: `linear-gradient(rgba(75, 53, 42, 0.7), rgba(75, 53, 42, 0.7)), url(${require('../assets/images/about-hero.jpg')})`,
-            backgroundSize: 'cover',
-            backgroundPosition: 'center',
-            backgroundRepeat: 'no-repeat'
-          }}
-        >
-          <div className="hero-content">
-            <h1 style={{ color: '#B2CD9C' }}>Our Story</h1>
-            <p style={{ color: '#B2CD9C' }}>Transforming the cashew value chain in Ivory Coast</p>
-          </div>
-        </section>
+      <section className="about-hero" style={{
+        backgroundImage: `linear-gradient(rgba(75, 53, 42, 0.7), rgba(75, 53, 42, 0.7)), url(${require('../assets/images/about-hero.jpg')})`,
+        backgroundSize: 'cover', backgroundPosition: 'center', backgroundRepeat: 'no-repeat'
+      }}>
+        <div className="hero-content">
+          <h1 style={{ color: '#B2CD9C' }}>{t('hero.title')}</h1>
+          <p style={{ color: '#B2CD9C' }}>{t('hero.subtitle')}</p>
+        </div>
+      </section>
 
       {/* CEO Message Section */}
-      <section className="ceo-section">
+      <section className="ceo-section" id="ceo-message">
         <div className="ceo-container">
           <div className="ceo-image">
-            <img src={ceoImage} alt="Hamza S. Ralsan Sangare, CEO of AfriNuts Export" />
+            <img src={ceoImage} alt={t('ceo.alt')} />
           </div>
           <div className="ceo-message">
+<<<<<<< HEAD
             <h2 style={{ color: '#4B352A' }}>A Message From Our CEO</h2>
             <p>
               "At AfriNuts Export, we’re not just building a business, we’re cultivating a legacy rooted in responsibility, heritage, and hope. 
@@ -56,174 +42,138 @@ const About = () => {
               But AfriNuts is about more than profit. We are committed to ethical trade, environmental stewardship, and reinvesting in Muslim communities through masajid, water wells, and education. 
               This is an amāna, a trust we carry for our people, investors, and Allah. We invite you to be part of this story and plant seeds with us that will benefit future generations in this world and the next."</p>
             <p className="ceo-signature">- Hamza S. Ralsan Sangare</p>
+=======
+            <h2>{t('ceo.title')}</h2>
+            <p>{t('ceo.message')}</p>
+            <p className="ceo-signature">{t('ceo.signature')}</p>
+>>>>>>> 858fe4b (Implement i18n translation with i18next and EmailJS contact form setup)
           </div>
         </div>
       </section>
 
-      {/* Brand Statement Section */}
-      <section className="brand-statement" style={{ backgroundColor: '#F5ECD5' }}>
+      {/* Brand Statement */}
+      <section className="brand-statement" id="brand-statement" style={{ backgroundColor: '#F5ECD5' }}>
         <div className="statement-container">
-          <h2 style={{ color: '#4B352A' }}>Our Brand Promise</h2>
-          <p style={{ color: '#4B352A' }}>
-            AfriNuts Export represents the finest quality Ivory Coast cashews, grown with integrity 
-            and processed with care. We bridge the gap between West Africa's rich agricultural 
-            heritage and global markets hungry for premium, ethically-sourced products.
-          </p>
+          <h2>{t('brand.title')}</h2>
+          <p>{t('brand.text')}</p>
         </div>
       </section>
 
-      {/* Mission/Vision/Values Section */}
-      <section className="core-values-section">
+      {/* Vision, Mission, Values */}
+      <section className="core-values-section" id="vmv">
         <div className="values-container">
           <div className="vision-mission-values">
             <div className="vmv-card">
-              <h3 style={{ color: '#4B352A' }}>Our Vision</h3>
-              <p>
-                To revolutionize West Africa's cashew industry by becoming a global leader in 
-                quality, sustainability, and community impact by 2040.
-              </p>
+              <h3>{t('vmv.vision.title')}</h3>
+              <p>{t('vmv.vision.text')}</p>
             </div>
             <div className="vmv-card">
-              <h3 style={{ color: '#4B352A' }}>Our Mission</h3>
-              <p>
-                To deliver premium cashew products through sustainable farming, rigorous quality 
-                control, and fair partnerships with local farmers.
-              </p>
+              <h3>{t('vmv.mission.title')}</h3>
+              <p>{t('vmv.mission.text')}</p>
             </div>
             <div className="vmv-card">
-              <h3 style={{ color: '#4B352A' }}>Our Values</h3>
-              <p>
-                Quality, Sustainability, Community Empowerment, and Innovation guide every decision 
-                we make at AfriNuts Export.
-              </p>
+              <h3>{t('vmv.values.title')}</h3>
+              <p>{t('vmv.values.text')}</p>
             </div>
           </div>
 
-        {/* Community Value Cards */}
-          <div className="community-values">
-            <h2 style={{ color: '#4B352A', textAlign: 'center' }}>Community Commitment</h2>
+          {/* Community */}
+          <div className="community-values" id="community">
+            <h2>{t('community.title')}</h2>
             <div className="community-cards">
               <div className="community-card" style={{ backgroundColor: '#B2CD9C' }}>
-                <FaHandsHelping className="community-icon" style={{ color: '#4B352A' }} />
-                <h3 style={{ color: '#4B352A' }}>10% Profit Pledge</h3>
-                <p>
-                  We dedicate 10% of annual profits to community development projects including 
-                  wells, mosques, and madrassas in our farming regions.
-                </p>
+                <FaHandsHelping className="community-icon" />
+                <h3>{t('community.cards.pledge.title')}</h3>
+                <p>{t('community.cards.pledge.text')}</p>
               </div>
               <div className="community-card" style={{ backgroundColor: '#94B4C1' }}>
-                <FaWater className="community-icon" style={{ color: '#4B352A' }} />
-                <h3 style={{ color: '#4B352A' }}>Clean Water Initiative</h3>
-                <p>
-                  Building wells to provide clean drinking water to communities near our farms.
-                </p>
+                <FaWater className="community-icon" />
+                <h3>{t('community.cards.water.title')}</h3>
+                <p>{t('community.cards.water.text')}</p>
               </div>
-              <div className="community-card" style={{ backgroundColor: '#CA7842', color: '#F0F2BD' }}>
+              <div className="community-card" style={{ backgroundColor: '#CA7842'}}>
                 <FaMosque className="community-icon" />
-                <h3>Religious Infrastructure</h3>
-                <p>
-                  Supporting the construction and maintenance of mosques and Islamic schools.
-                </p>
+                <h3>{t('community.cards.religion.title')}</h3>
+                <p>{t('community.cards.religion.text')}</p>
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Farm Section */}
+      {/* Farm */}
       <section className="farm-section" style={{ backgroundColor: '#B2CD9C' }}>
         <div className="farm-content">
           <div className="farm-text">
-            <h2 style={{ color: '#4B352A' }}>Our Farm in Odienné</h2>
-            <p style={{ color: '#4B352A' }}>
-              Located in the heart of Ivory Coast's cashew belt, our 50-hectare family-owned farm 
-              is the foundation of our operation. With the first harvest expected in 2031, we're 
-              committed to sustainable plantation development that benefits both the land and 
-              the local community.
-            </p>
+            <h2>{t('farm.title')}</h2>
+            <p>{t('farm.text')}</p>
             <div className="farm-stats">
               <div className="stat-item">
                 <FaMapMarkerAlt className="stat-icon" style={{ color: '#CA7842' }} />
-                <span style={{ color: '#4B352A' }}>Odienné, Ivory Coast</span>
+                <span>{t('farm.location')}</span>
               </div>
               <div className="stat-item">
                 <FaChartLine className="stat-icon" style={{ color: '#CA7842' }} />
-                <span style={{ color: '#4B352A' }}>50 Hectares</span>
+                <span>{t('farm.size')}</span>
               </div>
             </div>
           </div>
           <div className="farm-image">
-            <img 
-              src={farmImage} 
-              alt="AfriNuts Export cashew farm in Odienné, Ivory Coast" 
-              className="farm-photo"
-            />
+            <img src={farmImage} alt={t('farm.alt')} className="farm-photo" />
           </div>
-          </div>
+        </div>
       </section>
 
-      {/* Legacy Timeline Section */}
-      <section className="legacy-section" style={{ backgroundColor: '#B2CD9C' }}>
+      {/* Legacy Timeline */}
+      <section className="legacy-section" id="roots" style={{ backgroundColor: '#B2CD9C' }}>
         <div className="legacy-container">
-          <h2 style={{ color: '#4B352A', textAlign: 'center', marginBottom: '40px' }}>
-            From Family Roots to Global Vision
-          </h2>
-          
+          <h2>{t('legacy.title')}</h2>
+
           <div className="legacy-timeline">
-            {/* Family Legacy Era */}
+            {/* Family Era */}
             <div className="era">
-              <div className="era-header" style={{ backgroundColor: '#4B352A', color: '#F0F2BD' }}>
+              <div className="era-header" style={{ backgroundColor: '#CA7842', color: '#B2CD9C' }}>
                 <FaTree className="era-icon" />
-                <h3>Family Legacy (1990-2020)</h3>
+                <h3>{t('legacy.family.title')}</h3>
               </div>
               <div className="era-content">
-                <p>
-                  For over 30 years, our family has cultivated this land in Côte d'Ivoire, 
-                  mastering traditional cashew farming techniques passed down through generations.
-                </p>
+                <p>{t('legacy.family.text')}</p>
                 <ul className="legacy-feats">
-                  <li><FaSeedling /> Established sustainable farming practices</li>
-                  <li><FaHandshake /> Built trust with local farming communities</li>
-                  <li><FaLeaf /> Preserved the ecological balance of our land</li>
+                  <li><FaSeedling /> {t('legacy.family.feats.0')}</li>
+                  <li><FaHandshake /> {t('legacy.family.feats.1')}</li>
+                  <li><FaLeaf /> {t('legacy.family.feats.2')}</li>
                 </ul>
               </div>
             </div>
 
-            {/* Transition Arrow */}
             <div className="transition-arrow">
-              <FaArrowDown style={{ color: '#CA7842', fontSize: '2rem' }} />
+              <FaArrowDown />
             </div>
 
             {/* AfriNuts Era */}
             <div className="era">
-              <div className="era-header" style={{ backgroundColor: '#CA7842', color: '#F0F2BD' }}>
+              <div className="era-header" style={{ backgroundColor: '#CA7842', color: '#B2CD9C' }}>
                 <FaChartLine className="era-icon" />
-                <h3>AfriNuts Evolution (2023-Present)</h3>
+                <h3>{t('legacy.afrinuts.title')}</h3>
               </div>
               <div className="era-content">
-                <p>
-                  Today, AfriNuts Export represents our commitment to take this legacy to the next level - 
-                  combining traditional knowledge with modern innovation.
-                </p>
+                <p>{t('legacy.afrinuts.text')}</p>
                 <ul className="legacy-feats">
-                  <li><FaIndustry /> Establishing processing facilities</li>
-                  <li><FaGlobe /> Expanding to international markets</li>
-                  <li><FaUsers /> Empowering local communities</li>
-                  <li><FaSeedling /> Implementing precision agriculture</li>
+                  <li><FaIndustry /> {t('legacy.afrinuts.feats.0')}</li>
+                  <li><FaGlobe /> {t('legacy.afrinuts.feats.1')}</li>
+                  <li><FaUsers /> {t('legacy.afrinuts.feats.2')}</li>
+                  <li><FaSeedling /> {t('legacy.afrinuts.feats.3')}</li>
                 </ul>
               </div>
             </div>
 
-            {/* Future Vision */}
-            <div className="future-vision" style={{ borderColor: '#94B4C1' }}>
+            {/* Vision 2031 */}
+            <div className="future-vision">
               <div className="vision-header">
-                <FaRocket style={{ color: '#4B352A', fontSize: '1.5rem' }} />
-                <h3 style={{ color: '#4B352A' }}>Our 2031 Vision</h3>
+                <FaRocket />
+                <h3>{t('legacy.future.title')}</h3>
               </div>
-              <p>
-                By 2031, we aim to become West Africa's premier cashew exporter while maintaining 
-                our core values of sustainability and community development.
-              </p>
+              <p>{t('legacy.future.text')}</p>
             </div>
           </div>
         </div>

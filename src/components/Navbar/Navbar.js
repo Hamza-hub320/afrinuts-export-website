@@ -1,28 +1,39 @@
-import { useState, useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import './Navbar.css';
 import { FaGlobe, FaBars, FaTimes } from 'react-icons/fa';
 import logo from '../../assets/images/afrinuts-export-official-logo.png';
+import { useTranslation } from 'react-i18next';
 
-const Navbar = ({ language, toggleLanguage }) => {
+const Navbar = () => {
+  const { t, i18n } = useTranslation('common');
   const location = useLocation();
   const [click, setClick] = useState(false);
+  const [languageLabel, setLanguageLabel] = useState('');
 
-  // Improved route matching function
-  const isActive = (path) => {
-    if (path === '/') {
-      return location.pathname === '/';
-    }
-    return location.pathname.startsWith(path);
+  // Toggle EN/FR and update label
+  const toggleLanguage = () => {
+    const newLang = i18n.language === 'en' ? 'fr' : 'en';
+    i18n.changeLanguage(newLang);
+    localStorage.setItem('i18nextLng', newLang); // Optional: ensures consistency
+    setLanguageLabel(newLang === 'en' ? 'FR' : 'EN');
   };
 
-  // Navigation items data
+  useEffect(() => {
+    // Set label on first load
+    setLanguageLabel(i18n.language === 'en' ? 'FR' : 'EN');
+  }, [i18n.language]);
+
+  const isActive = (path) => {
+    return location.pathname === path || location.pathname.startsWith(path);
+  };
+
   const navItems = [
-    { path: '/', name: 'Home' },
-    { path: '/about', name: 'About' },
-    { path: '/products', name: 'Products' },
-    { path: '/farm', name: 'Our Farm' },
-    { path: '/contact', name: 'Contact' },
+    { path: '/', label: t('navbar.home') },
+    { path: '/about', label: t('navbar.about') },
+    { path: '/products', label: t('navbar.products') },
+    { path: '/farm', label: t('navbar.farm') },
+    { path: '/contact', label: t('navbar.contact') },
   ];
 
   const handleClick = () => {
@@ -35,43 +46,28 @@ const Navbar = ({ language, toggleLanguage }) => {
     document.body.classList.remove('menu-open');
   };
 
-  // Cleanup on unmount
-  useEffect(() => {
-    return () => {
-      document.body.classList.remove('menu-open');
-    };
-  }, []);
-
   return (
     <nav className="navbar">
       <div className="navbar-container">
         <Link to="/" className="navbar-logo" onClick={closeMobileMenu}>
-          <img 
-            src={logo} 
-            alt="AfriNuts Export Logo" 
-            className="nav-logo-img"
-          />
+          <img src={logo} alt="AfriNuts Export Logo" className="nav-logo-img" />
           <span className="logo-text">AfriNuts Export</span>
         </Link>
 
-        {/* Mobile Menu Icon */}
         <div className="menu-icon" onClick={handleClick}>
           {click ? <FaTimes /> : <FaBars />}
         </div>
 
-        {/* Navigation Menu */}
         <ul className={click ? 'nav-menu active' : 'nav-menu'}>
-          {navItems.map((item) => (
-            <li className="nav-item" key={item.path}>
+          {navItems.map((item, index) => (
+            <li className="nav-item" key={index}>
               <Link
                 to={item.path}
                 className={`nav-links ${isActive(item.path) ? 'active' : ''}`}
                 onClick={closeMobileMenu}
               >
-                {item.name}
-                {isActive(item.path) && (
-                  <span className="visually-hidden">(current)</span>
-                )}
+                {item.label}
+                {isActive(item.path) && <span className="visually-hidden">(current)</span>}
               </Link>
             </li>
           ))}
@@ -80,7 +76,7 @@ const Navbar = ({ language, toggleLanguage }) => {
         {/* Language Toggle */}
         <button className="navbar-lang-toggle" onClick={toggleLanguage}>
           <FaGlobe />
-          <span>{language === 'en' ? 'FR' : 'EN'}</span>
+          <span>{languageLabel}</span>
         </button>
       </div>
     </nav>

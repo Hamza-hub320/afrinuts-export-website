@@ -1,0 +1,41 @@
+{
+  "hero": {
+    "title": "Contact Us",
+    "subtitle": "Get in touch with our team for inquiries and partnerships"
+  },
+  "form": {
+    "title": "Send Us a Message",
+    "name": "Your Name*",
+    "email": "Email Address*",
+    "subject": "Subject*",
+    "message": "Message*",
+    "file": "Attach File (Optional, max 5MB)",
+    "submit": "Send Message",
+    "sending": "Sending..."
+  },
+  "info": {
+    "title": "Our Contact Information",
+    "address": "Address",
+    "phone": "Phone",
+    "email": "Email",
+    "hours": "Mon-Fri: 8am-5pm",
+    "businessHours": "Business Hours"
+  },
+  "map": {
+    "title": "Our Location"
+  },
+  "success": {
+    "title": "Message Sent Successfully!",
+    "message": "We'll get back to you soon.",
+    "close": "Close"
+  },
+  "errors": {
+    "name": "Name is required",
+    "emailRequired": "Email is required",
+    "emailInvalid": "Email is invalid",
+    "subject": "Subject is required",
+    "message": "Message is required",
+    "fileSize": "File size must be less than 5MB",
+    "submit": "Failed to send message. Please try again later."
+  }
+}

@@ -272,3 +272,23 @@
     padding: 60px 20px;
   }
 }
+
+/* Add to Home.css */
+.language-toggle {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: rgba(255, 255, 255, 0.8);
+  border: 1px solid var(--primary);
+  border-radius: 20px;
+  padding: 5px 10px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.language-toggle:hover {
+  background: var(--secondary);
+}

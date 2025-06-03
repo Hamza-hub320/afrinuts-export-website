@@ -1,0 +1,59 @@
+{
+  "hero": {
+    "title": "Our Cashew Farm",
+    "subtitle": "Sustainably cultivating premium cashews in the heart of Ivory Coast"
+  },
+  "overview": {
+    "heading": "50 Hectares of Premium Cashews",
+    "description": "Located in Odienné, the cashew belt of Ivory Coast, our family-owned farm is being developed using sustainable agricultural practices to produce the highest quality raw cashew nuts."
+  },
+  "stats": {
+    "area": "50 Hectares",
+    "areaLabel": "Total Area",
+    "location": "Odienné",
+    "locationLabel": "Location",
+    "phase": "2026-2031",
+    "phaseLabel": "Development Phase",
+    "practices": "Sustainable",
+    "practicesLabel": "Farming Practices"
+  },
+  "timeline": {
+    "title": "Our Development Timeline",
+    "items": [
+      {
+        "title": "Land Preparation",
+        "description": "Soil analysis, land clearing, and irrigation setup"
+      },
+      {
+        "title": "Planting Begins",
+        "description": "Initial planting of cashew trees across 35 hectares"
+      },
+      {
+        "title": "First Harvest",
+        "description": "Expected first commercial harvest from our plantation"
+      }
+    ]
+  },
+  "gallery": {
+    "title": "Farm Gallery",
+    "alt1": "Cashew plantation",
+    "alt2": "Farm development"
+  },
+  "sustainability": {
+    "title": "Sustainable Farming Practices",
+    "items": [
+      {
+        "title": "Water Conservation",
+        "description": "Efficient irrigation systems to minimize water usage"
+      },
+      {
+        "title": "Organic Methods",
+        "description": "Minimal chemical inputs, natural pest control"
+      },
+      {
+        "title": "Soil Health",
+        "description": "Crop rotation and organic matter to maintain fertility"
+      }
+    ]
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "hero": {
+    "welcome": "Welcome to AfriNuts Export",
+    "tagline": "Premium cashews from Ivory Coast",
+    "learnMore": "Learn More",
+    "products": "Our Products",
+    "viewStory": "View Our Story"
+  },
+  "aboutPreview": {
+    "title": "Our Story",
+    "description": "Transforming the cashew value chain in Ivory Coast through sustainable farming and community empowerment."
+  }
+}

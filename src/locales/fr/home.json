@@ -1,0 +1,13 @@
+{
+  "hero": {
+    "welcome": "Bienvenue chez AfriNuts Export",
+    "tagline": "Noix de cajou premium de Côte d'Ivoire",
+    "learnMore": "En savoir plus",
+    "products": "Nos produits",
+    "viewStory": "Voir notre histoire"
+  },
+  "aboutPreview": {
+    "title": "Notre Histoire",
+    "description": "Transformer la chaîne de valeur de la noix de cajou en Côte d'Ivoire grâce à une agriculture durable et à l'autonomisation des communautés."
+  }
+}

@@ -1,0 +1,79 @@
+{
+  "hero": {
+    "title": "Our Story",
+    "tagline": "Transforming the cashew value chain in Ivory Coast"
+  },
+  "ceo": {
+    "title": "A Message From Our CEO",
+    "message": "\"At AfriNuts Export, we’re not just building a business, we’re cultivating a legacy rooted in responsibility, heritage, and hope. As a native of Odienné and the son of cashew farmers, I’ve witnessed firsthand our people's struggles and strength. This land has nourished generations before me, and now we must harness its potential with vision and integrity. Our mission is clear: transforming Côte d’Ivoire’s cashew sector by moving beyond raw exports into value-added processing, traceable sourcing, and community reinvestment. We're bridging the gap between African producers and global markets through our integrated model, from our 35-hectare sustainable farm to the future processing facility. But AfriNuts is about more than profit. We are committed to ethical trade, environmental stewardship, and reinvesting in Muslim communities through masajid, water wells, and education. This is an amāna, a trust we carry for our people, investors, and Allah. We invite you to be part of this story to plant seeds with us that will benefit generations to come, both in this world and the next.\"",
+    "signature": "- Hamza S. Ralsan Sangare"
+  },
+  "brand": {
+    "title": "Our Brand Promise",
+    "text": "AfriNuts Export represents the finest quality Ivory Coast cashews, grown with integrity and processed with care. We bridge the gap between West Africa's rich agricultural heritage and global markets hungry for premium, ethically-sourced products."
+  },
+  "vmv": {
+    "vision": {
+      "title": "Our Vision",
+      "text": "To revolutionize West Africa's cashew industry by becoming a global leader in quality, sustainability, and community impact by 2040."
+    },
+    "mission": {
+      "title": "Our Mission",
+      "text": "To deliver premium cashew products through sustainable farming, rigorous quality control, and fair partnerships with local farmers."
+    },
+    "values": {
+      "title": "Our Values",
+      "text": "Quality, Sustainability, Community Empowerment, and Innovation guide every decision we make at AfriNuts Export."
+    }
+    },
+    "community": {
+    "title": "Community Commitment",
+    "cards": {
+      "pledge": {
+        "title": "10% Profit Pledge",
+        "text": "We dedicate 10% of annual profits to community development projects including wells, mosques, and madrassas in our farming regions."
+      },
+      "water": {
+        "title": "Clean Water Initiative",
+        "text": "Building wells to provide clean drinking water to communities near our farms."
+      },
+      "religion": {
+        "title": "Religious Infrastructure",
+        "text": "Supporting the construction and maintenance of mosques and Islamic schools."
+      }
+    }
+  },
+  "farm": {
+    "title": "Our Farm in Odienné",
+    "text": "Located in the heart of Ivory Coast's cashew belt, our 50-hectare family-owned farm is the foundation of our operation. With the first harvest expected in 2031, we're committed to sustainable plantation development that benefits both the land and the local community.",
+    "location": "Odienné, Ivory Coast",
+    "size": "50 Hectares",
+     "alt": "Ferme de cajou d'AfriNuts Export"
+  },
+  "legacy": {
+    "title": "From Family Roots to Global Vision",
+    "family": {
+      "title": "Family Legacy (1990–2020)",
+      "text": "Located in the heart of Ivory Coast's cashew belt, our 50-hectare family-owned farm is the foundation of our operation. With the first harvest expected in 2031, we're committed to sustainable plantation development that benefits both the land and the local community.",
+      "feats": [
+        "Established sustainable farming practices",
+        "Built trust with local farming communities",
+        "Preserved the ecological balance of our land"
+      ]
+    },
+    "afrinuts": {
+      "title": "AfriNuts Evolution (2023–Present)",
+      "text": "Today, AfriNuts Export represents our commitment...",
+      "feats": [
+        "Establishing processing facilities",
+        "Expanding to international markets",
+        "Empowering local communities",
+        "Implementing precision agriculture"
+      ]
+    },
+    "future": {
+      "title": "Our 2031 Vision",
+      "text": "By 2031, we aim to become West Africa's premier cashew exporter..."
+    }
+  }
+}

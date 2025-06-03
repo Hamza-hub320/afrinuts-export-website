@@ -1,0 +1,59 @@
+{
+  "hero": {
+    "title": "Notre Ferme de Cajou",
+    "subtitle": "Cultiver durablement des cajous premium au cœur de la Côte d'Ivoire"
+  },
+  "overview": {
+    "heading": "50 Hectares de Cajous Premium",
+    "description": "Située à Odienné, dans la ceinture de cajou de la Côte d'Ivoire, notre ferme familiale est développée selon des pratiques agricoles durables pour produire des noix de cajou brutes de la plus haute qualité."
+  },
+  "stats": {
+    "area": "50 Hectares",
+    "areaLabel": "Superficie totale",
+    "location": "Odienné",
+    "locationLabel": "Emplacement",
+    "phase": "2026-2031",
+    "phaseLabel": "Phase de développement",
+    "practices": "Durable",
+    "practicesLabel": "Méthodes agricoles"
+  },
+  "timeline": {
+    "title": "Notre Chronologie de Développement",
+    "items": [
+      {
+        "title": "Préparation du terrain",
+        "description": "Analyse du sol, défrichage et mise en place de l'irrigation"
+      },
+      {
+        "title": "Début de la plantation",
+        "description": "Plantation initiale de cajous sur 35 hectares"
+      },
+      {
+        "title": "Première récolte",
+        "description": "Première récolte commerciale attendue de notre plantation"
+      }
+    ]
+  },
+  "gallery": {
+    "title": "Galerie de la Ferme",
+    "alt1": "Plantation de cajou",
+    "alt2": "Développement de la ferme"
+  },
+  "sustainability": {
+    "title": "Pratiques Agricoles Durables",
+    "items": [
+      {
+        "title": "Conservation de l'eau",
+        "description": "Systèmes d'irrigation efficaces pour minimiser la consommation d'eau"
+      },
+      {
+        "title": "Méthodes biologiques",
+        "description": "Entrants chimiques minimaux, lutte naturelle contre les nuisibles"
+      },
+      {
+        "title": "Santé du sol",
+        "description": "Rotation des cultures et matière organique pour maintenir la fertilité"
+      }
+    ]
+  }
+}

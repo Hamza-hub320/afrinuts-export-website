@@ -32,14 +32,6 @@ const About = () => {
           </div>
           <div className="ceo-message">
             <h2 style={{ color: '#4B352A' }}>A Message From Our CEO</h2>
-            <p>
-              "At AfriNuts Export, we’re not just building a business, we’re cultivating a legacy rooted in responsibility, heritage, and hope. 
-              As a native of Odienné and the son of cashew farmers, I’ve witnessed firsthand our people's struggles and strength. 
-              This land has nourished generations before me, and now we must harness its potential with vision and integrity. 
-              Our mission is clear: transforming Côte d’Ivoire’s cashew sector by moving beyond raw exports into value-added processing, traceable sourcing, and community reinvestment. 
-              We're bridging the gap between African producers and global markets through our integrated model, from our 35-hectare sustainable farm to the future processing facility. 
-              But AfriNuts is about more than profit. We are committed to ethical trade, environmental stewardship, and reinvesting in Muslim communities through masajid, water wells, and education. 
-              This is an amāna, a trust we carry for our people, investors, and Allah. We invite you to be part of this story and plant seeds with us that will benefit future generations in this world and the next."</p>
             <p className="ceo-signature">- Hamza S. Ralsan Sangare</p>
             <h2>{t('ceo.title')}</h2>
             <p>{t('ceo.message')}</p>

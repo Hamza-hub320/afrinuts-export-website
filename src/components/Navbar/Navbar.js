@@ -15,7 +15,7 @@ const Navbar = () => {
   const toggleLanguage = () => {
     const newLang = i18n.language === 'en' ? 'fr' : 'en';
     i18n.changeLanguage(newLang);
-    localStorage.setItem('i18nextLng', newLang); // Optional: ensures consistency
+    localStorage.setItem('i18nextLng', newLang);
     setLanguageLabel(newLang === 'en' ? 'FR' : 'EN');
   };
 
@@ -24,8 +24,11 @@ const Navbar = () => {
     setLanguageLabel(i18n.language === 'en' ? 'FR' : 'EN');
   }, [i18n.language]);
 
-  const isActive = (path) => {
-    return location.pathname === path || location.pathname.startsWith(path);
+   const isActive = (path) => {
+    if (path === '/') {
+      return location.pathname === '/';
+    }
+    return location.pathname.startsWith(path);
   };
 
   const navItems = [

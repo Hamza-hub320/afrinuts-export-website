@@ -31,8 +31,8 @@ const About = () => {
             <img src={ceoImage} alt={t('ceo.alt')} />
           </div>
           <div className="ceo-message">
-            <h2 style={{ color: '#4B352A' }}>A Message From Our CEO</h2>
-            <p className="ceo-signature">- Hamza S. Ralsan Sangare</p>
+            <h2 style={{ color: '#4B352A' }}></h2>
+            <p className="ceo-signature"></p>
             <h2>{t('ceo.title')}</h2>
             <p>{t('ceo.message')}</p>
             <p className="ceo-signature">{t('ceo.signature')}</p>

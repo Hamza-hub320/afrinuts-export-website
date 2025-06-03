@@ -359,40 +359,135 @@
   box-shadow: 0 6px 12px rgba(0,0,0,0.15);
 }
 
-/* Responsive Adjustments */
+/* ================================ */
+/* ✅ Mobile Responsiveness Patch  */
+/* ================================ */
+
 @media (max-width: 768px) {
+  .products-hero {
+    height: 50vh;
+    min-height: 300px;
+  }
+
+  .hero-content {
+    padding: 0 15px;
+  }
+
   .hero-content h1 {
-    font-size: 2.5rem;
+    font-size: 2.2rem;
   }
-  
+
   .hero-content p {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
   }
-  
-  .products-intro h2,
-  .products-cta h2 {
+
+  .products-intro {
+    padding: 60px 15px;
+  }
+
+  .products-intro h2 {
     font-size: 2rem;
   }
-  
+
+  .products-intro p {
+    font-size: 1rem;
+  }
+
   .products-grid {
     grid-template-columns: 1fr;
+    gap: 20px;
   }
-  
+
   .modern-product-card {
-    height: 450px;
+    height: auto;
+    min-height: 500px;
+  }
+
+  .modern-product-content {
+    padding: 20px;
+  }
+
+  .product-description {
+    font-size: 1rem;
+  }
+
+  .modern-product-button,
+  .coming-soon-badge {
+    font-size: 0.9rem;
+    padding: 10px 20px;
+  }
+
+  .cta-container {
+    padding: 0 15px;
+  }
+
+  .products-cta {
+    padding: 60px 15px;
+  }
+
+  .cta-button {
+    width: 100%;
+    font-size: 1rem;
+    padding: 12px 24px;
   }
 }
 
 @media (max-width: 480px) {
   .hero-content h1 {
-    font-size: 2rem;
+    font-size: 1.8rem;
   }
-  
+
   .hero-content p {
     font-size: 1rem;
   }
-  
-  .products-hero {
-    height: 50vh;
+
+  .products-intro h2,
+  .products-cta h2 {
+    font-size: 1.6rem;
+  }
+
+  .products-intro p,
+  .products-cta p {
+    font-size: 0.95rem;
+  }
+
+  .product-description {
+    font-size: 0.95rem;
+  }
+
+  .modern-features-list li {
+    font-size: 0.95rem;
+  }
+
+  .modern-product-button {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .cta-button {
+    width: 100%;
+    padding: 12px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .modern-product-card {
+    height: 450px;
+  }
+}
+
+@media (max-width: 768px) {
+  .modern-product-card {
+    height: 400px;
+  }
+}
+
+@media (max-width: 480px) {
+  .modern-product-card {
+    height: 360px;
+  }
+
+  .product-body {
+    max-height: 150px;
   }
 }

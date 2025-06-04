@@ -1,41 +1,40 @@
 {
   "hero": {
-    "title": "Contactez-nous",
-    "subtitle": "Contactez notre équipe pour toute demande ou partenariat"
+    "title": "Contactez AfriNuts Export",
+    "subtitle": "Opportunités de partenariat, demandes de produits ou informations sur les investissements"
   },
   "form": {
-    "title": "Envoyez-nous un message",
-    "name": "Votre nom*",
-    "email": "Adresse e-mail*",
+    "title": "Envoyez-nous un Message",
+    "name": "Nom Complet*",
+    "email": "Email Professionnel*",
     "subject": "Objet*",
-    "message": "Message*",
-    "file": "Joindre un fichier (optionnel, max 5Mo)",
-    "submit": "Envoyer le message",
-    "sending": "Envoi..."
+    "message": "Votre Message*",
+    "submit": "Envoyer la Demande",
+    "sending": "Envoi en Cours..."
   },
   "info": {
-    "title": "Nos coordonnées",
-    "address": "Adresse",
+    "title": "Siège Social",
+    "address": "Odienné, Côte d'Ivoire",
     "phone": "Téléphone",
     "email": "Email",
-    "hours": "Lun-Ven : 8h-17h",
-    "businessHours": "Heures d'ouverture"
+    "hours": "Lundi-Vendredi: 8h00 - 17h00 GMT",
+    "businessHours": "Heures d'Ouverture"
   },
   "map": {
-    "title": "Notre emplacement"
+    "title": "Notre Siège Opérationnel"
   },
   "success": {
-    "title": "Message envoyé avec succès !",
-    "message": "Nous vous répondrons bientôt.",
-    "close": "Fermer"
+    "title": "Merci pour Votre Message",
+    "message": "Votre demande a bien été reçue. Notre équipe vous répondra dans les 2 jours ouvrés.",
+    "close": "Retour au Site"
   },
   "errors": {
-    "name": "Le nom est requis",
-    "emailRequired": "L'e-mail est requis",
-    "emailInvalid": "L'e-mail est invalide",
-    "subject": "L'objet est requis",
-    "message": "Le message est requis",
-    "fileSize": "La taille du fichier doit être inférieure à 5 Mo",
-    "submit": "Échec de l'envoi. Veuillez réessayer plus tard."
+    "name": "Veuillez indiquer votre nom complet",
+    "emailRequired": "Une adresse email valide est requise",
+    "emailInvalid": "Veuillez saisir une adresse email valide",
+    "subject": "Veuillez préciser l'objet de votre demande",
+    "message": "Veuillez inclure un message détaillé",
+    "fileSize": "Taille maximale du fichier dépassée (5MB maximum)",
+    "submit": "Erreur de transmission. Veuillez nous écrire directement à contact@afrinutsexport.com"
   }
 }

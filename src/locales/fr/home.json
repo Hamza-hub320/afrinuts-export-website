@@ -1,13 +1,13 @@
 {
   "hero": {
     "welcome": "Bienvenue chez AfriNuts Export",
-    "tagline": "Noix de cajou premium de Côte d'Ivoire",
-    "learnMore": "En savoir plus",
-    "products": "Nos produits",
-    "viewStory": "Voir notre histoire"
+    "tagline": "De notre ferme familiale à votre table : Noix de cajou certifiées halal cultivées avec intention",
+    "learnMore": "Découvrez notre mission",
+    "products": "Découvrez notre récolte",
+    "viewStory": "Rencontrez notre famille"
   },
   "aboutPreview": {
-    "title": "Notre Histoire",
-    "description": "Transformer la chaîne de valeur de la noix de cajou en Côte d'Ivoire grâce à une agriculture durable et à l'autonomisation des communautés."
+    "title": "Enracinés à Odienné, Connectés au Monde",
+    "description": "Trois générations d'expertise en noix de cajou rencontrent l'agro-industrie éthique moderne. Fondée par la famille Sangaré en 2023, nous révolutionnons l'industrie de la noix de cajou en Afrique de l'Ouest grâce à l'intégration verticale, la responsabilité sociale islamique et l'innovation durable."
   }
 }

@@ -1,25 +1,33 @@
 {
   "hero": {
-    "title": "Nos Produits",
-    "subtitle": "De notre ferme à votre table - des noix de cajou de qualité supérieure"
+    "title": "Nos Produits Premium de Noix de Cajou",
+    "subtitle": "Source éthique des terres fertiles d'Odienné aux marchés mondiaux"
   },
   "intro": {
-    "title": "Une qualité de confiance",
-    "description": "AfriNuts Export est spécialisé dans les produits de cajou haut de gamme, avec une installation de transformation prévue pour 2031. Nous proposons actuellement des noix de cajou brutes provenant de notre ferme de 50 hectares et de producteurs locaux de confiance en Côte d'Ivoire."
+    "title": "Qualité Traçable de la Ferme au Marché",
+    "description": "Alors que notre usine de transformation ouvrira en 2031 pour élargir notre gamme, nous proposons actuellement des noix de cajou brutes premium provenant de notre ferme familiale de 50 hectares et de producteurs partenaires de la ceinture cajoutière ivoirienne."
   },
   "items": [
     {
       "name": "Noix de Cajou Brutes",
-      "description": "Noix de cajou de qualité supérieure provenant directement de notre ferme et de producteurs locaux de confiance à Odienné",
-      "features": ["Qualité Grade A", "Séchées au soleil et soigneusement triées", "Disponibles en sacs de 50kg"],
+      "description": "Noix séchées au soleil et triées à la main",
+      "features": [
+        "Qualité Grade",
+        "Disponible en sacs de jute de 50kg qualité export",
+        "Traçabilité garantie des fermes partenaires"
+      ],
       "available": true,
       "backgroundImage": "raw-cashew.jpg",
       "icon": "FaSeedling"
     },
     {
       "name": "Amandes de Cajou",
-      "description": "Amandes de cajou transformées prêtes à être exportées, disponibles en plusieurs grades",
-      "features": ["Grades W320, W240, W180 disponibles", "Inspectées manuellement pour la qualité", "Emballées sous vide pour une fraîcheur optimale"],
+      "description": "Amandes transformées avec précision",
+      "features": [
+        "Plusieurs grades : W320, W240, W180",
+        "Transformation certifiée HACCP",
+        "Emballées sous vide pour une fraîcheur optimale"
+      ],
       "comingSoon": "Disponible à partir de 2031",
       "available": false,
       "backgroundImage": "cashew-kernels.jpg",
@@ -27,47 +35,60 @@
     },
     {
       "name": "Beurre de Cajou",
-      "description": "Beurre de cajou crémeux, biologique, à base de noix de cajou 100 % ivoiriennes",
-      "features": ["Sans additifs ni conservateurs", "Riche en graisses saines et en protéines", "Parfait pour les régimes végétaliens"],
-      "comingSoon": "Disponible en 2031",
+      "description": "Beurre onctueux et biologique à base à 100% de noix de cajou ivoiriennes",
+      "features": [
+        "Sans additifs ni conservateurs",
+        "Riche en graisses saines et protéines",
+        "Idéal pour les régimes végétaliens"
+      ],
+      "comingSoon": "Disponible à partir de 2031",
       "available": false,
       "backgroundImage": "cashew-butter.jpg",
       "icon": "FaIndustry"
     },
     {
       "name": "Liquide de Coque de Noix de Cajou",
-      "description": "Sous-produit précieux à usage industriel",
-      "features": ["Utilisé dans les revêtements et les résines", "Qualité industrielle", "Disponible en grandes quantités"],
-      "comingSoon": "Production prévue en 2031",
+      "description": "Sous-produit précieux aux applications industrielles",
+      "features": [
+        "Utilisé dans les revêtements et résines",
+        "Qualité industrielle certifiée",
+        "Disponible en grandes quantités"
+      ],
+      "comingSoon": "Disponible à partir de 2031",
       "available": false,
       "backgroundImage": "cashew-nut-shell-liquid.jpg",
       "icon": "FaLeaf"
     },
     {
       "name": "Noix de Cajou Grillées",
-      "description": "Noix de cajou grillées avec croquant et saveur parfaite",
-      "features": ["Légèrement salées ou nature", "Parfaites pour les collations ou les recettes", "Riches en nutriments et antioxydants"],
-      "comingSoon": "Disponible en 2031",
+      "description": "Noix de cajou premium grillées avec un croquant et une saveur parfaits",
+      "features": [
+        "Trois variétés : Nature, Légèrement salé, Épicé",
+        "Lentement grillées pour préserver les nutriments",
+        "Riches en cuivre, magnésium et antioxydants"
+      ],
+      "comingSoon": "Disponible à partir de 2031",
       "available": false,
       "backgroundImage": "roasted-cashew.jpg",
       "icon": "FaLeaf"
     },
     {
       "name": "Lait de Cajou",
-      "description": "Alternative crémeuse et sans produits laitiers, riche en vitamines et minéraux",
-      "features": ["Variétés nature ou non sucrées", "Enrichi en calcium et en vitamine D", "Parfait pour le café, les smoothies et la pâtisserie"],
-      "comingSoon": "Disponible en 2031",
+      "description": "Alternative végétale crémeuse au lait",
+      "features": [
+        "Enrichie en calcium et en vitamine D",
+        "Faible en sucre (2 g pour 100 ml)",
+        "Emballage UHT longue conservation"
+      ],
+      "comingSoon": "Disponible à partir de 2031",
       "available": false,
       "backgroundImage": "cashew-milk.jpg",
       "icon": "FaLeaf"
     }
   ],
-  "buttons": {
-    "requestQuote": "Demander un devis"
-  },
   "cta": {
-    "title": "Intéressé par nos produits ?",
-    "subtitle": "Contactez-nous pour des demandes de prix en gros",
-    "button": "Nous contacter"
+    "title": "Devenez Partenaire",
+    "subtitle": "Pour demandes en gros, échantillons ou disponibilités futures",
+    "button": "Contacter Notre Équipe Commerciale"
   }
 }

@@ -1,58 +1,58 @@
 {
   "hero": {
-    "title": "Notre Ferme de Cajou",
-    "subtitle": "Cultiver durablement des cajous premium au cœur de la Côte d'Ivoire"
+    "title": "La Plantation de Cajou AfriNuts Export",
+    "subtitle": "Cultivation des meilleures noix de cajou d'Afrique de l'Ouest grâce à l'agriculture régénératrice"
   },
   "overview": {
-    "heading": "50 Hectares de Cajous Premium",
-    "description": "Située à Odienné, dans la ceinture de cajou de la Côte d'Ivoire, notre ferme familiale est développée selon des pratiques agricoles durables pour produire des noix de cajou brutes de la plus haute qualité."
+    "heading": "50 Hectares de Production de Cajou Premium",
+    "description": "Située à Odienné, épicentre de la production de noix de cajou en Côte d'Ivoire, notre plantation familiale est développée avec des techniques agricoles climato-intelligentes pour produire des noix brutes de qualité premium avec une traçabilité complète du sol à l'expédition."
   },
   "stats": {
-    "area": "50 Hectares",
-    "areaLabel": "Superficie totale",
-    "location": "Odienné",
-    "locationLabel": "Emplacement",
+    "area": "35 Hectares en culture",
+    "areaLabel": "Superficie Totale",
+    "location": "Odienné, Côte d'Ivoire",
+    "locationLabel": "Coordonnées Géographiques",
     "phase": "2026-2031",
-    "phaseLabel": "Phase de développement",
-    "practices": "Durable",
-    "practicesLabel": "Méthodes agricoles"
+    "phaseLabel": "Feuille de Route",
+    "practices": "Agriculture Régénératrice",
+    "practicesLabel": "Méthodologie Agricole"
   },
   "timeline": {
-    "title": "Notre Chronologie de Développement",
+    "title": "Phases de Développement Stratégique",
     "items": [
       {
-        "title": "Préparation du terrain",
-        "description": "Analyse du sol, défrichage et mise en place de l'irrigation"
+        "title": "Aménagement du Terrain",
+        "description": "Cartographie complète des sols, défrichement sélectif et installation d'infrastructures d'irrigation de précision"
       },
       {
-        "title": "Début de la plantation",
-        "description": "Plantation initiale de cajous sur 35 hectares"
+        "title": "Plantation",
+        "description": "Mise en place systématique de cultivars de cajou à haut rendement sur 35 hectares avec espacement optimal"
       },
       {
-        "title": "Première récolte",
-        "description": "Première récolte commerciale attendue de notre plantation"
+        "title": "Première Récolte Commerciale",
+        "description": "Rendement initial projeté de 8 à 10 tonnes par hectare des arbres matures"
       }
     ]
   },
   "gallery": {
-    "title": "Galerie de la Ferme",
-    "alt1": "Plantation de cajou",
-    "alt2": "Développement de la ferme"
+    "title": "Progrès de la Plantation",
+    "alt1": "Verger de cajou en développement avec jeunes plants",
+    "alt2": "Techniques durables de préparation des terres"
   },
   "sustainability": {
-    "title": "Pratiques Agricoles Durables",
+    "title": "Notre Engagement d'Agriculture Régénératrice",
     "items": [
       {
-        "title": "Conservation de l'eau",
-        "description": "Systèmes d'irrigation efficaces pour minimiser la consommation d'eau"
+        "title": "Gestion Hydrique",
+        "description": "Systèmes d'irrigation goutte-à-goutte réduisant la consommation d'eau de 40% par rapport aux méthodes traditionnelles"
       },
       {
-        "title": "Méthodes biologiques",
-        "description": "Entrants chimiques minimaux, lutte naturelle contre les nuisibles"
+        "title": "Culture Biologique",
+        "description": "Gestion intégrée des parasites et fertilisants organiques pour préserver l'écosystème"
       },
       {
-        "title": "Santé du sol",
-        "description": "Rotation des cultures et matière organique pour maintenir la fertilité"
+        "title": "Régénération des Sols",
+        "description": "Cultures de couverture et apports de compost pour améliorer la fertilité à long terme"
       }
     ]
   }

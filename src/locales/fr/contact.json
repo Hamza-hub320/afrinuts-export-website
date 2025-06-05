@@ -36,5 +36,15 @@
     "message": "Veuillez inclure un message détaillé",
     "fileSize": "Taille maximale du fichier dépassée (5MB maximum)",
     "submit": "Erreur de transmission. Veuillez nous écrire directement à contact@afrinutsexport.com"
+  },
+
+  "weather": {
+    "error": "Informations météorologiques actuellement indisponibles",
+    "loading": "Chargement des données météorologiques...",
+    "feelsLike": "Ressenti",
+    "humidity": "Humidité",
+    "wind": "Vent",
+    "kmh": "km/h",
+    "currentWeather": "Météo actuelle à Odienné"
   }
 }

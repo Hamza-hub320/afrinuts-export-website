@@ -3,6 +3,8 @@ import { FaMapMarkerAlt, FaPhone, FaEnvelope, FaClock, FaCheckCircle } from 'rea
 import emailjs from '@emailjs/browser';
 import React, { useState } from 'react';
 import { useTranslation } from 'react-i18next';
+import WeatherDisplay from '../components/WeatherDisplay/WeatherDisplay';
+
 
 const Contact = () => {
   const { t } = useTranslation('contact');
@@ -138,6 +140,8 @@ const Contact = () => {
 
         <section className="contact-info-section">
           <h2>{t('info.title')}</h2>
+
+          <WeatherDisplay location="Odienne" />
 
           <div className="contact-info-card">
             <FaMapMarkerAlt className="contact-icon" />

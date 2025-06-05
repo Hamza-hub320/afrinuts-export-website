@@ -133,14 +133,14 @@
 
 .contact-info-section h2 {
   font-size: 2rem;
-  margin-bottom: 30px;
+  margin-bottom: 0px;
   color: #4B352A;
 }
 
 .contact-info-card {
   display: flex;
   gap: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 0px;
 }
 
 .contact-icon {
@@ -524,4 +524,26 @@ only screen and (min-resolution: 192dpi) {
     padding: 20px 0;
     background-color: transparent;
   }
+}
+
+/* Add to src/Contact.css */
+.contact-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 30px 20px;
+}
+
+@media (max-width: 768px) {
+  .contact-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+.contact-info-section {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }

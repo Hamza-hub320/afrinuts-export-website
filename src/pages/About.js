@@ -4,7 +4,7 @@ import { useTranslation } from 'react-i18next';
 import farmImage from '../assets/images/cashew-farm.jpg';
 import ceoImage from '../assets/images/ceo.jpg';
 import {
-  FaTree, FaSeedling, FaHandshake, FaLeaf, FaIndustry, FaGlobe, FaUsers,
+  FaTree, FaSeedling, FaArrowRight, FaHandshake, FaLeaf, FaIndustry, FaGlobe, FaUsers,
   FaArrowDown, FaRocket, FaMapMarkerAlt, FaChartLine, FaHandsHelping, FaMosque, FaWater
 } from 'react-icons/fa';
 
@@ -75,6 +75,12 @@ const About = () => {
                 <h3>{t('community.cards.pledge.title')}</h3>
                 <p>{t('community.cards.pledge.text')}</p>
               </div>
+
+              {/* Transition arrow */}
+              <div className="transition-arrow-card">
+                <FaArrowRight className="arrow-icon" />
+              </div>
+
               <div className="community-card" style={{ backgroundColor: '#94B4C1' }}>
                 <FaWater className="community-icon" />
                 <h3>{t('community.cards.water.title')}</h3>
@@ -87,6 +93,7 @@ const About = () => {
               </div>
             </div>
           </div>
+
         </div>
       </section>
 

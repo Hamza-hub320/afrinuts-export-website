@@ -5,7 +5,6 @@ import React, { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import WeatherDisplay from '../components/WeatherDisplay/WeatherDisplay';
 
-
 const Contact = () => {
   const { t } = useTranslation('contact');
 
@@ -86,10 +85,10 @@ const Contact = () => {
         </div>
       )}
 
-      <section className="contact-hero" style={{ backgroundImage: `linear-gradient(rgba(75, 53, 42, 0.7), rgba(75, 53, 42, 0.7)), url(${require('../assets/images/contact-hero.jpg')})` }}>
-        <div className="hero-content">
-          <h1 style={{ color: '#B2CD9C' }}>{t('hero.title')}</h1>
-          <p style={{ color: '#B2CD9C' }}>{t('hero.subtitle')}</p>
+      <section className="contact-hero contact-hero-bg">
+        <div className="hero-overlay-box">
+          <h1 className="hero-text">{t('hero.title')}</h1>
+          <p className="hero-text">{t('hero.subtitle')}</p>
         </div>
       </section>
 
@@ -101,25 +100,53 @@ const Contact = () => {
           <form onSubmit={handleSubmit} className="contact-form">
             <div className="form-group">
               <label htmlFor="name">{t('form.name')}</label>
-              <input type="text" id="name" name="name" value={formData.name} onChange={handleChange} className={errors.name ? 'error' : ''} />
+              <input
+                type="text"
+                id="name"
+                name="name"
+                value={formData.name}
+                onChange={handleChange}
+                className={errors.name ? 'error' : ''}
+              />
               {errors.name && <span className="error-message">{errors.name}</span>}
             </div>
 
             <div className="form-group">
               <label htmlFor="email">{t('form.email')}</label>
-              <input type="email" id="email" name="email" value={formData.email} onChange={handleChange} className={errors.email ? 'error' : ''} />
+              <input
+                type="email"
+                id="email"
+                name="email"
+                value={formData.email}
+                onChange={handleChange}
+                className={errors.email ? 'error' : ''}
+              />
               {errors.email && <span className="error-message">{errors.email}</span>}
             </div>
 
             <div className="form-group">
               <label htmlFor="subject">{t('form.subject')}</label>
-              <input type="text" id="subject" name="subject" value={formData.subject} onChange={handleChange} className={errors.subject ? 'error' : ''} />
+              <input
+                type="text"
+                id="subject"
+                name="subject"
+                value={formData.subject}
+                onChange={handleChange}
+                className={errors.subject ? 'error' : ''}
+              />
               {errors.subject && <span className="error-message">{errors.subject}</span>}
             </div>
 
             <div className="form-group">
               <label htmlFor="message">{t('form.message')}</label>
-              <textarea id="message" name="message" rows="6" value={formData.message} onChange={handleChange} className={errors.message ? 'error' : ''}></textarea>
+              <textarea
+                id="message"
+                name="message"
+                rows="6"
+                value={formData.message}
+                onChange={handleChange}
+                className={errors.message ? 'error' : ''}
+              ></textarea>
               {errors.message && <span className="error-message">{errors.message}</span>}
             </div>
 
@@ -187,7 +214,11 @@ const Contact = () => {
           <iframe
             title="AfriNuts Export Location"
             src={`https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126906.4744261831!2d-7.5903136!3d9.5091664!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zOcKwMzAnMzMuMCJOIDfCsDM1JzI1LjEiVw!5e0!3m2!1sen!2sus!4v1234567890123!5m2!1sen!2sus`}
-            width="100%" height="450" style={{ border: 0 }} allowFullScreen loading="lazy"
+            width="100%"
+            height="450"
+            style={{ border: 0 }}
+            allowFullScreen
+            loading="lazy"
           ></iframe>
         </div>
       </section>

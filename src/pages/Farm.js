@@ -20,24 +20,11 @@ const Farm = () => {
     <div className="farm-page">
       {/* Hero Section */}
       <section
-        className="farm-hero"
-        style={{
-          backgroundImage: `linear-gradient(rgba(75, 53, 42, 0.7), rgba(75, 53, 42, 0.7)), url(${farmHero})`,
-          backgroundSize: 'cover',
-          backgroundPosition: 'center',
-          backgroundRepeat: 'no-repeat',
-          height: '45vh',
-          minHeight: '400px',
-          display: 'flex',
-          alignItems: 'center',
-          justifyContent: 'center',
-          textAlign: 'center',
-          color: '#F0F2BD'
-        }}
+        className="farm-hero farm-hero-bg"
       >
-        <div className="hero-content">
-          <h1>{t('hero.title')}</h1>
-          <p>{t('hero.subtitle')}</p>
+        <div className="hero-overlay-box">
+          <h1 className="hero-text">{t('hero.title')}</h1>
+          <p className="hero-text">{t('hero.subtitle')}</p>
         </div>
       </section>
 

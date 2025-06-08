@@ -14,16 +14,20 @@ const Products = () => {
     navigate('/contact');
   };
 
+  const iconMap = {
+    FaSeedling: FaSeedling,
+    FaWeightHanging: FaWeightHanging,
+    FaIndustry: FaIndustry,
+    FaLeaf: FaLeaf,
+  };
+
   return (
     <main className="products-page">
       {/* Hero Section */}
-      <section 
-        className="products-hero" 
-        style={{ backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(${require('../assets/images/our-product-hero.jpg')})` }}
-      >
-        <div className="hero-content">
-          <h1 style={{ color: '#B2CD9C' }}>{t('hero.title')}</h1>
-          <p style={{ color: '#B2CD9C' }}>{t('hero.subtitle')}</p>
+      <section className="products-hero products-hero-bg">
+        <div className="hero-overlay-box">
+          <h1 className="hero-text">{t('hero.title')}</h1>
+          <p className="hero-text">{t('hero.subtitle')}</p>
         </div>
       </section>
 
@@ -40,17 +44,18 @@ const Products = () => {
         <div className="products-grid-container">
           <div className="products-grid">
             {products.map((product, index) => {
-              const Icon =
-                product.icon === 'FaSeedling' ? FaSeedling :
-                product.icon === 'FaWeightHanging' ? FaWeightHanging :
-                product.icon === 'FaIndustry' ? FaIndustry : FaLeaf;
+              const Icon = iconMap[product.icon] || FaLeaf;
+              const bgImage = require(`../assets/images/${product.backgroundImage}`);
 
               return (
                 <div 
                   key={index}
                   className="modern-product-card"
-                  style={{ 
-                    backgroundImage: `linear-gradient(to bottom, rgba(0,0,0,0.1) 0%, rgba(0,0,0,0.4) 70%), url(${require(`../assets/images/${product.backgroundImage}`)})`
+                  style={{
+                    backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(${bgImage})`,
+                    backgroundSize: 'cover',
+                    backgroundPosition: 'center',
+                    backgroundRepeat: 'no-repeat'
                   }}
                 >
                   <div className="modern-product-content">

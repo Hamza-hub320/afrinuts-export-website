@@ -218,7 +218,7 @@ body.dark-mode,
     border: none;
     margin-left: 0;
     width: auto;
-    padding: 0;
+    padding: 3px;
   }
 
   .navbar-lang-toggle:hover,

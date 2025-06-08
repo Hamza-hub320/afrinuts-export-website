@@ -1,9 +1,9 @@
 {
   "navbar": {
     "home": "Accueil",
-    "about": "À propos",
+    "about": "Profil",
     "products": "Produits",
-    "farm": "Notre Ferme",
+    "farm": "Ferme",
     "contact": "Contact"
   },
   "language": {

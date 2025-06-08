@@ -1,4 +1,48 @@
-/* About Page Styles */
+
+.about-hero {
+  background-image: url('../assets/images/about-hero.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.ceo-message h2 {
+  color: #4B352A;
+}
+
+.brand-statement {
+  background-color: #F5ECD5;
+}
+
+.bg-green {
+  background-color: #B2CD9C;
+}
+
+.bg-blue {
+  background-color: #94B4C1;
+}
+
+.bg-orange {
+  background-color: #CA7842;
+}
+
+.farm-section {
+  background-color: #B2CD9C;
+}
+
+.stat-icon.orange {
+  color: #CA7842;
+}
+
+.legacy-section {
+  background-color: #B2CD9C;
+}
+
+.era-header {
+  background-color: #CA7842;
+  color: #B2CD9C;
+}
+
 .about-page {
   font-family: 'Arial', sans-serif;
   color: #4B352A;
@@ -6,32 +50,64 @@
 
 /* Hero Section */
 .about-hero {
-  height: 45vh;
-  min-height: 400px;
+  display: flex;
+  position: relative;
+}
+
+.about-hero {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 60vh;
   display: flex;
   align-items: center;
-  justify-content: center;
-  text-align: center;
-  padding: 0 20px;
-  position: relative;
+  justify-content: flex-start;
+  padding: 0 5%;
 }
 
-.hero-content {
-  position: relative;
-  z-index: 2;
-  max-width: 800px;
-  margin: 0 auto;
+/* NEW overlay box */
+.hero-overlay-box {
+  background-color: rgba(255, 255, 255, 0.70);
+  padding: 40px 30px;
+  max-width: 550px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
 }
 
-.hero-content h1 {
-  font-size: 3.5rem;
-  margin-bottom: 1rem;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+/* Hero text styles */
+.hero-overlay-box .hero-text {
+  color: #2C3930;
+  margin-bottom: 20px;
 }
 
-.hero-content p {
-  font-size: 1.5rem;
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+.hero-overlay-box h1.hero-text {
+  font-size: 2.5rem;
+}
+
+.hero-overlay-box p.hero-text {
+  font-size: 1.2rem;
+}
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+  .about-hero {
+    padding: 0 20px;
+    height: auto;
+    min-height: 60vh;
+  }
+
+  .hero-overlay-box {
+    padding: 20px;
+    max-width: 100%;
+  }
+
+  .hero-overlay-box h1.hero-text {
+    font-size: 2rem;
+  }
+
+  .hero-overlay-box p.hero-text {
+    font-size: 1rem;
+  }
 }
 
 /* Mission Section */
@@ -581,3 +657,4 @@
     font-size: 0.95rem;
   }
 }
+

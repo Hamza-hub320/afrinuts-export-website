@@ -1,3 +1,4 @@
+// src/App.js
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Layout from './components/Layout/Layout';
 import Home from './pages/Home';
@@ -22,7 +23,7 @@ function App() {
           </Route>
         </Routes>
       </BrowserRouter>
-  </I18nextProvider>
+    </I18nextProvider>
   );
 }
 

@@ -1,3 +1,20 @@
+/* Stat Icons in Overview */
+.stat-icon {
+  color: #CA7842;
+}
+
+/* Timeline Date Styling */
+.timeline-date {
+  background-color: #CA7842;
+  color: #F0F2BD;
+}
+
+/* Timeline Content Background */
+.timeline-content {
+  background-color: #ffffff;
+}
+
+
 /* Farm Page Styles */
 .farm-page {
   font-family: 'Arial', sans-serif;
@@ -6,24 +23,72 @@
 
 /* Hero Section */
 .farm-hero {
-   display: flex;
+  display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
   color: #B2CD9C;
 }
 
-.hero-content h1 {
-  font-size: 3.5rem;
-  margin-bottom: 1rem;
-  color: #B2CD9C;
+/* Hero Section */
+.farm-hero {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0 5%;
 }
 
-.hero-content p {
-  font-size: 1.5rem;
-  max-width: 800px;
-  margin: 0 auto;
-  color: #B2CD9C;
+.farm-hero-bg {
+  background-image: url('../assets/images/farm-hero.jpg');
+}
+
+/* Overlay content box */
+.hero-overlay-box {
+  background-color: rgba(255, 255, 255, 0.70);
+  padding: 40px 30px;
+  max-width: 550px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Text inside hero box */
+.hero-overlay-box .hero-text {
+  color: #2C3930;
+  margin-bottom: 20px;
+}
+
+.hero-overlay-box h1.hero-text {
+  font-size: 2.5rem;
+}
+
+.hero-overlay-box p.hero-text {
+  font-size: 1.2rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .farm-hero {
+    padding: 0 20px;
+    height: auto;
+    min-height: 60vh;
+  }
+
+  .hero-overlay-box {
+    padding: 20px;
+    max-width: 100%;
+  }
+
+  .hero-overlay-box h1.hero-text {
+    font-size: 2rem;
+  }
+
+  .hero-overlay-box p.hero-text {
+    font-size: 1rem;
+  }
 }
 
 /* Farm Overview */
@@ -202,6 +267,7 @@
 .sustainability-section {
   padding: 80px 20px;
   text-align: center;
+  background-color: #B2CD9C;
 }
 
 .sustainability-section h2 {

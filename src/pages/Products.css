@@ -1,38 +1,14 @@
+/* Hero Section Background */
+.products-hero {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url('../assets/images/our-product-hero.jpg');
+}
+
 /* Products Page Styles */
 .products-page {
   font-family: 'Arial', sans-serif;
-}
-
-/* Hero Section with Background Image */
-.products-hero {
-  height: 45vh;
-  min-height: 400px;
-  background-size: cover;
-  background-position: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-}
-
-.hero-overlay {
-  background-color: rgba(75, 53, 42, 0.7);
-  color: #F0F2BD;
-  padding: 40px;
-  text-align: center;
-  max-width: 800px;
-  border-radius: 8px;
-  margin: 0 20px;
-}
-
-.products-hero h1 {
-  font-size: 3rem;
-  margin-bottom: 1rem;
-}
-
-.products-hero p {
-  font-size: 1.5rem;
-  margin-bottom: 2rem;
 }
 
 /* Intro Section */
@@ -67,34 +43,64 @@
 
 /* Hero Section */
 .products-hero {
-  height: 45vh;
+  display: flex;
+  position: relative;
+}
+
+.products-hero {
   background-size: cover;
   background-position: center;
+  background-repeat: no-repeat;
+  height: 60vh;
   display: flex;
   align-items: center;
-  justify-content: center;
-  text-align: center;
-  position: relative;
+  justify-content: flex-start;
+  padding: 0 5%;
 }
 
-.hero-content {
-  position: relative;
-  z-index: 2;
-  color: white;
-  max-width: 800px;
-  padding: 0 20px;
+/* Light overlay box */
+.hero-overlay-box {
+  background-color: rgba(255, 255, 255, 0.70);
+  padding: 40px 30px;
+  max-width: 550px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
 }
 
-.hero-content h1 {
-  font-size: 3.5rem;
-  margin-bottom: 1rem;
-  text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+/* Hero text */
+.hero-overlay-box .hero-text {
+  color: #2C3930;
+  margin-bottom: 20px;
 }
 
-.hero-content p {
-  font-size: 1.5rem;
-  margin-bottom: 0;
-  text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+.hero-overlay-box h1.hero-text {
+  font-size: 2.5rem;
+}
+
+.hero-overlay-box p.hero-text {
+  font-size: 1.2rem;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .products-hero {
+    padding: 0 20px;
+    height: auto;
+    min-height: 60vh;
+  }
+
+  .hero-overlay-box {
+    padding: 20px;
+    max-width: 100%;
+  }
+
+  .hero-overlay-box h1.hero-text {
+    font-size: 2rem;
+  }
+
+  .hero-overlay-box p.hero-text {
+    font-size: 1rem;
+  }
 }
 
 /* Intro Section */
@@ -173,7 +179,7 @@
   display: flex;
   flex-direction: column;
   padding: 30px;
-  color: white;
+  color: #F8F5F0;
 }
 
 .product-header {
@@ -192,7 +198,7 @@
 .product-header h3 {
   font-size: 1.8rem;
   margin: 0;
-  color: white;
+  color: #F8F5F0;
   text-shadow: 0 2px 4px rgba(0,0,0,0.3);
   font-weight: 600;
 }
@@ -263,7 +269,7 @@
 }
 
 .modern-product-button:hover {
-  background: white;
+  background: #F8F5F0;
   transform: translateY(-2px);
   box-shadow: 0 6px 12px rgba(0,0,0,0.15);
 }
@@ -359,9 +365,8 @@
   box-shadow: 0 6px 12px rgba(0,0,0,0.15);
 }
 
-/* ================================ */
-/* ✅ Mobile Responsiveness Patch  */
-/* ================================ */
+
+/* Mobile Responsiveness Patch  */
 
 @media (max-width: 768px) {
   .products-hero {
@@ -491,3 +496,5 @@
     max-height: 150px;
   }
 }
+
+

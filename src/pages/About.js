@@ -14,13 +14,10 @@ const About = () => {
   return (
     <main className="about-page">
       {/* Hero Section */}
-      <section className="about-hero" style={{
-        backgroundImage: `linear-gradient(rgba(75, 53, 42, 0.7), rgba(75, 53, 42, 0.7)), url(${require('../assets/images/about-hero.jpg')})`,
-        backgroundSize: 'cover', backgroundPosition: 'center', backgroundRepeat: 'no-repeat'
-      }}>
-        <div className="hero-content">
-          <h1 style={{ color: '#B2CD9C' }}>{t('hero.title')}</h1>
-          <p style={{ color: '#B2CD9C' }}>{t('hero.subtitle')}</p>
+      <section className="about-hero about-hero-bg">
+        <div className="hero-overlay-box">
+          <h1 className="hero-text">{t('hero.title')}</h1>
+          <p className="hero-text">{t('hero.subtitle')}</p>
         </div>
       </section>
 
@@ -31,9 +28,7 @@ const About = () => {
             <img src={ceoImage} alt={t('ceo.alt')} />
           </div>
           <div className="ceo-message">
-            <h2 style={{ color: '#4B352A' }}></h2>
-            <p className="ceo-signature"></p>
-            <h2>{t('ceo.title')}</h2>
+            <h2 className="ceo-title">{t('ceo.title')}</h2>
             <p>{t('ceo.message')}</p>
             <p className="ceo-signature">{t('ceo.signature')}</p>
           </div>
@@ -41,7 +36,7 @@ const About = () => {
       </section>
 
       {/* Brand Statement */}
-      <section className="brand-statement" id="brand-statement" style={{ backgroundColor: '#F5ECD5' }}>
+      <section className="brand-statement bg-light">
         <div className="statement-container">
           <h2>{t('brand.title')}</h2>
           <p>{t('brand.text')}</p>
@@ -70,7 +65,7 @@ const About = () => {
           <div className="community-values" id="community">
             <h2>{t('community.title')}</h2>
             <div className="community-cards">
-              <div className="community-card" style={{ backgroundColor: '#B2CD9C' }}>
+              <div className="community-card bg-green">
                 <FaHandsHelping className="community-icon" />
                 <h3>{t('community.cards.pledge.title')}</h3>
                 <p>{t('community.cards.pledge.text')}</p>
@@ -81,35 +76,34 @@ const About = () => {
                 <FaArrowRight className="arrow-icon" />
               </div>
 
-              <div className="community-card" style={{ backgroundColor: '#94B4C1' }}>
+              <div className="community-card bg-blue">
                 <FaWater className="community-icon" />
                 <h3>{t('community.cards.water.title')}</h3>
                 <p>{t('community.cards.water.text')}</p>
               </div>
-              <div className="community-card" style={{ backgroundColor: '#CA7842'}}>
+              <div className="community-card bg-orange">
                 <FaMosque className="community-icon" />
                 <h3>{t('community.cards.religion.title')}</h3>
                 <p>{t('community.cards.religion.text')}</p>
               </div>
             </div>
           </div>
-
         </div>
       </section>
 
       {/* Farm */}
-      <section className="farm-section" style={{ backgroundColor: '#B2CD9C' }}>
+      <section className="farm-section bg-green">
         <div className="farm-content">
           <div className="farm-text">
             <h2>{t('farm.title')}</h2>
             <p>{t('farm.text')}</p>
             <div className="farm-stats">
               <div className="stat-item">
-                <FaMapMarkerAlt className="stat-icon" style={{ color: '#CA7842' }} />
+                <FaMapMarkerAlt className="stat-icon" />
                 <span>{t('farm.location')}</span>
               </div>
               <div className="stat-item">
-                <FaChartLine className="stat-icon" style={{ color: '#CA7842' }} />
+                <FaChartLine className="stat-icon" />
                 <span>{t('farm.size')}</span>
               </div>
             </div>
@@ -121,14 +115,14 @@ const About = () => {
       </section>
 
       {/* Legacy Timeline */}
-      <section className="legacy-section" id="roots" style={{ backgroundColor: '#B2CD9C' }}>
+      <section className="legacy-section bg-green" id="roots">
         <div className="legacy-container">
           <h2>{t('legacy.title')}</h2>
 
           <div className="legacy-timeline">
             {/* Family Era */}
             <div className="era">
-              <div className="era-header" style={{ backgroundColor: '#CA7842', color: '#B2CD9C' }}>
+              <div className="era-header bg-orange text-green">
                 <FaTree className="era-icon" />
                 <h3>{t('legacy.family.title')}</h3>
               </div>
@@ -148,7 +142,7 @@ const About = () => {
 
             {/* AfriNuts Era */}
             <div className="era">
-              <div className="era-header" style={{ backgroundColor: '#CA7842', color: '#B2CD9C' }}>
+              <div className="era-header bg-orange text-green">
                 <FaChartLine className="era-icon" />
                 <h3>{t('legacy.afrinuts.title')}</h3>
               </div>
